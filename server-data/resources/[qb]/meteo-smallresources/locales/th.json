@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "สำหรับตำรวจเท่านั้น"
+  },
+  "afk": {
+    "will_kick": "คุณ AFK และจะถูกเตะออกใน",
+    "time_seconds": "วินาที!",
+    "time_minutes": "นาที!",
+    "kick_message": "คุณถูกเตะออกเพราะ AFK"
+  },
+  "wash": {
+    "in_progress": "ยานพาหนะกำลังถูกล้าง...",
+    "wash_vehicle": "ล้างยานพาหนะ",
+    "wash_vehicle_target": "ล้างยานพาหนะ",
+    "dirty": "ยานพาหนะไม่สกปรก",
+    "cancel": "ยกเลิกการล้าง...",
+    "no_money": "คุณไม่มีเงินเพียงพอ"
+  },
+  "consumables": {
+    "eat_progress": "กำลังกิน...",
+    "drink_progress": "กำลังดื่ม...",
+    "liqour_progress": "กำลังดื่มเหล้า...",
+    "coke_progress": "ดมเร็ว...",
+    "crack_progress": "กำลังสูบแครก...",
+    "ecstasy_progress": "กิน Ecstasy",
+    "healing_progress": "กำลังรักษา",
+    "meth_progress": "กำลังสูบเมทแอมเฟตามีน",
+    "joint_progress": "จุดจอยント...",
+    "use_parachute_progress": "สวมใส่พาราชูท...",
+    "pack_parachute_progress": "ห่อพาราชูท...",
+    "no_parachute": "คุณไม่มีพาราชูท!",
+    "armor_full": "คุณมีเกราะเพียงพอแล้ว!",
+    "armor_empty": "คุณไม่ได้สวมใส่เสื้อป้องกัน...",
+    "armor_progress": "สวมใส่เกราะป้องกาย...",
+    "heavy_armor_progress": "สวมใส่เกราะป้องกาย...",
+    "remove_armor_progress": "ถอดเกราะป้องกาย...",
+    "canceled": "ยกเลิก..."
+  },
+  "cruise": {
+    "unavailable": "ควบคุมความเร็วไม่สามารถใช้ได้",
+    "activated": "เปิดใช้งานควบคุมความเร็ว",
+    "deactivated": "ปิดใช้งานควบคุมความเร็ว"
+  },
+  "editor": {
+    "started": "เริ่มการบันทึกแล้ว!",
+    "save": "บันทึกการบันทึกแล้ว!",
+    "delete": "ลบการบันทึกแล้ว!",
+    "editor": "พบกันใหม่!"
+  },
+  "firework": {
+    "place_progress": "กำลังวางพลุ...",
+    "canceled": "ยกเลิก...",
+    "time_left": "พลุจะปล่อยใน ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "ติดอุปกรณ์ความปลอดภัยการแข่ง",
+    "remove_harness_progress": "ถอดอุปกรณ์ความปลอดภัยการแข่ง",
+    "no_car": "คุณไม่ได้อยู่ในรถ",
+    "harness_on": "ไม่สามารถเปลี่ยนเข็มขัดนิรภัยขณะที่มีอุปกรณ์ความปลอดภัยการแข่ง",
+    "harness_broken": "อุปกรณ์ความปลอดภัยการแข่งของคุณแตกแล้ว!"
+  },
+  "teleport": {
+    "teleport_default": "ใช้ลิฟต์"
+  },
+  "pushcar": {
+    "stop_push": "[E] หยุดผลัก"
+  }
+}

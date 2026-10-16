@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "ยกลิฟท์",
+    "target_lift_lower": "ลิฟท์ล่าง",
+    "target_door_unlock": "ปลดล็อคประตู",
+    "target_door_lock": "ล็อคประตู",
+    "notify_no_access": "คุณไม่มีสิทธิ์เข้าถึงสิ่งนี้",
+    "notify_busy": "รอให้มันหยุดเคลื่อนไหว",
+    "notify_locked": "ล็อคประตูแล้ว",
+    "notify_unlocked": "ประตูปลดล็อคแล้ว"
+}

@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Vain poliiseille"
+  },
+  "afk": {
+    "will_kick": "Olet AFK:ssa ja sinut poistettava",
+    "time_seconds": "sekuntia!",
+    "time_minutes": "minuuttia!",
+    "kick_message": "Sinut poistettiin AFK:sta"
+  },
+  "wash": {
+    "in_progress": "Autoa pestään...",
+    "wash_vehicle": "Pese auto",
+    "wash_vehicle_target": "Pese auto",
+    "dirty": "Auto ei ole likainen",
+    "cancel": "Pesu peruutettu...",
+    "no_money": "Sinulla ei ole tarpeeksi rahaa"
+  },
+  "consumables": {
+    "eat_progress": "Syödään...",
+    "drink_progress": "Juodaan...",
+    "liqour_progress": "Juodaan väkeviä...",
+    "coke_progress": "Nopea silaus...",
+    "crack_progress": "Savutetaan crackia...",
+    "ecstasy_progress": "Juodaan pillereitä",
+    "healing_progress": "Parannetaan",
+    "meth_progress": "Savutetaan metamfetamiinia",
+    "joint_progress": "Sytytetään jointtia...",
+    "use_parachute_progress": "Pujotaan laskuvarjoa...",
+    "pack_parachute_progress": "Pakataan laskuvarjoa...",
+    "no_parachute": "Sinulla ei ole laskuvarjoa!",
+    "armor_full": "Sinulla on jo tarpeeksi suojausta!",
+    "armor_empty": "Et käytä liivejä...",
+    "armor_progress": "Pujotaan kylmää...",
+    "heavy_armor_progress": "Pujotaan liivejä...",
+    "remove_armor_progress": "Poistetaan liivejä...",
+    "canceled": "Peruutettu..."
+  },
+  "cruise": {
+    "unavailable": "Cruise-ohjaus ei saatavilla",
+    "activated": "Cruise-ohjaus aktivoitu",
+    "deactivated": "Cruise-ohjaus poistettu käytöstä"
+  },
+  "editor": {
+    "started": "Tallennus aloitettu!",
+    "save": "Tallennus tallennettu!",
+    "delete": "Tallennus poistettu!",
+    "editor": "Näkemiin!"
+  },
+  "firework": {
+    "place_progress": "Asetetaan ilotulitteita...",
+    "canceled": "Peruutettu...",
+    "time_left": "Ilotulitus laukeaa ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Kiinnitetään kilpailun valjaat",
+    "remove_harness_progress": "Poistetaan kilpailun valjaat",
+    "no_car": "Et ole autossa.",
+    "harness_on": "Et voi vaihtaa turvavöitä kilpailun valjaiden ollessa päällä",
+    "harness_broken": "Kilpailun valjaat ovat rikkoutuneet!"
+  },
+  "teleport": {
+    "teleport_default": "Käytä hissiä"
+  },
+  "pushcar": {
+    "stop_push": "[E] Lopeta työntäminen"
+  }
+}

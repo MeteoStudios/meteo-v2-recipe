@@ -1,0 +1,62 @@
+# Written by recipe_release.py, edit it there
+name: Release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Version
+        run: echo "TAG=v$(grep -m1 '^version:' recipe.yaml | awk '{print $2}')" >> "$GITHUB_ENV"
+
+      - name: txAdmin parts
+        run: |
+          mkdir -p out parts/base
+          cp -r server-data database parts/base/
+          move_part() {
+            mkdir -p "parts/$1/$(dirname "$2")"
+            mv "parts/base/$2" "parts/$1/$2"
+          }
+          move_part assets "server-data/resources/[assets]"
+          move_part images "server-data/resources/[standalone]/meteo-imagestudio/images"
+          for p in parts/*; do (cd "$p" && zip -qr "../../out/$(basename "$p").zip" .); done
+
+      - name: Full package
+        run: |
+          mkdir -p full
+          cp -r server-data database README.md CREDITS.md full/
+          cd full/server-data
+          curl -fsSL -o /tmp/oxmysql.zip https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
+          unzip -q /tmp/oxmysql.zip -d "resources/[ox]"
+          curl -fsSL https://codeload.github.com/citizenfx/cfx-server-data/tar.gz/0e7ba538339f7c1c26d0e689aa750a336576cf02 | tar -xz -C /tmp
+          mv /tmp/cfx-server-data-*/resources "resources/[cfx-default]"
+          rm -rf "resources/[cfx-default]/[gameplay]/chat" "resources/[cfx-default]/[gameplay]/chat-theme-gtao"
+          sed -i 's|{{serverEndpoints}}|endpoint_add_tcp "0.0.0.0:30120"\nendpoint_add_udp "0.0.0.0:30120"|; s|{{svLicense}}|ENTER_YOUR_LICENSE_KEY|; s|{{serverName}}|Meteo Studios V2 Package|; s|{{dbConnectionString}}|mysql://root@localhost/meteov2?charset=utf8mb4|' server.cfg
+          sed -i 's|{{addPrincipalsMaster}}|add_principal identifier.license:YOUR_LICENSE_HERE group.admin ## CHANGE THIS TO YOURS|' permissions.cfg
+          cd ../database
+          sed -i '1i CREATE DATABASE IF NOT EXISTS `meteov2` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;\nUSE `meteov2`;\n' meteov2.sql
+          sed -i '1i USE `meteov2`;\n' meteov2data.sql
+          cd .. && zip -qr "../out/meteo-v2-package-recipe.zip" .
+
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            gh release upload "$TAG" out/* --clobber
+            for a in $(gh release view "$TAG" --json assets --jq '.assets[].name'); do
+              [ -f "out/$a" ] || gh release delete-asset "$TAG" "$a" -y
+            done
+          else
+            gh release create "$TAG" out/* --title "Meteo V2 Package $TAG" --notes "txAdmin downloads base, assets and images.zip. meteo-v2-package-recipe.zip is the whole server for a manual install, see the README."
+          fi

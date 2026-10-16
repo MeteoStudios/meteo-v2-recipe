@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Hef lift op",
+    "target_lift_lower": "Lagere lift",
+    "target_door_unlock": "Deur ontgrendelen",
+    "target_door_lock": "Deur op slot",
+    "notify_no_access": "Je hebt hier geen toegang toe",
+    "notify_busy": "Wacht tot het niet meer beweegt",
+    "notify_locked": "Deur op slot",
+    "notify_unlocked": "Deur ontgrendeld"
+}

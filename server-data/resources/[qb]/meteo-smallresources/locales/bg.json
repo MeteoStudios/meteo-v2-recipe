@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Само за полицейски офицери"
+  },
+  "afk": {
+    "will_kick": "Ти си AFK и ще бъдеш изгонен в",
+    "time_seconds": "секунди!",
+    "time_minutes": "минута(и)!",
+    "kick_message": "Бе изгонен за AFK"
+  },
+  "wash": {
+    "in_progress": "Колата се мие...",
+    "wash_vehicle": "Мий колата",
+    "wash_vehicle_target": "Мий колата",
+    "dirty": "Колата не е мръсна",
+    "cancel": "Миенето е отменено...",
+    "no_money": "Нямаш достатъчно пари"
+  },
+  "consumables": {
+    "eat_progress": "Ядене...",
+    "drink_progress": "Пиене...",
+    "liqour_progress": "Пиене на спирт...",
+    "coke_progress": "Бързо шнифане...",
+    "crack_progress": "Пушене на крак...",
+    "ecstasy_progress": "Прием на таблетки",
+    "healing_progress": "Лечение",
+    "meth_progress": "Пушене на мет",
+    "joint_progress": "Запалване на цигара...",
+    "use_parachute_progress": "Надиране на парашут...",
+    "pack_parachute_progress": "Пакетиране на парашут...",
+    "no_parachute": "Нямаш парашут!",
+    "armor_full": "Вече имаш достатъчно броня!",
+    "armor_empty": "Не носиш жилетка...",
+    "armor_progress": "Надиране на броня...",
+    "heavy_armor_progress": "Надиране на тежка броня...",
+    "remove_armor_progress": "Снемане на броня...",
+    "canceled": "Отменено..."
+  },
+  "cruise": {
+    "unavailable": "Круиз контрол е недостъпен",
+    "activated": "Круиз контрол активиран",
+    "deactivated": "Круиз контрол деактивиран"
+  },
+  "editor": {
+    "started": "Начало на записването!",
+    "save": "Записано!",
+    "delete": "Изтрито!",
+    "editor": "До скоро крокодил!"
+  },
+  "firework": {
+    "place_progress": "Поставяне на фойерверк...",
+    "canceled": "Отменено...",
+    "time_left": "Запалване на фойерверк в ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Прикрепяне на гащи за състезание",
+    "remove_harness_progress": "Отстраняване на гащи за състезание",
+    "no_car": "Не си в кола.",
+    "harness_on": "Не може да превключите колана докато е надет гащи за състезание",
+    "harness_broken": "Твоите гащи за състезание се счупиха!"
+  },
+  "teleport": {
+    "teleport_default": "Използвай асансьора"
+  },
+  "pushcar": {
+    "stop_push": "[E] Спиране на бутането"
+  }
+}

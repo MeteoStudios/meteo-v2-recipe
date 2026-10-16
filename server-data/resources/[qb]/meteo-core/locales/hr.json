@@ -1,0 +1,288 @@
+{
+    "error": {
+        "not_online": "Igrac nije online",
+        "wrong_format": "Neispravan format",
+        "missing_args": "Nije unesen svaki argument (x, y, z)",
+        "missing_args2": "Svi argumenti moraju biti popunjeni!",
+        "no_access": "Nema pristupa ovoj naredbi",
+        "company_too_poor": "Vaš poslodavac je bez novca",
+        "item_not_exist": "Stavka ne postoji",
+        "too_heavy": "Inventar je prepun",
+        "location_not_exist": "Lokacija ne postoji",
+        "duplicate_license": "Pronađen duplikat Rockstar licence",
+        "no_valid_license": "Nije pronađena važeća Rockstar licenca",
+        "not_whitelisted": "Niste na popisu dopuštenih za ovaj poslužitelj",
+        "server_already_open": "Poslužitelj je već otvoren",
+        "server_already_closed": "Poslužitelj je već zatvoren",
+        "no_permission": "Nemate paket za dostavu",
+        "no_waypoint": "Nije postavljena putna točka.",
+        "tp_error": "Pogreška prilikom teleportiranja.",
+        "connecting_database_timeout": "Povezivanje s bazom podataka isteklo je. (Je li SQL poslužitelj uključen?)",
+        "connecting_error": "Došlo je do pogreške prilikom povezivanja s poslužiteljem. (Provjerite svoju konzolu poslužitelja)",
+        "no_match_character_registration": "Ništa osim slova nije dopušteno, razmaci na kraju nisu dopušteni, a riječi moraju počinjati velikim slovom u poljima za unos. Međutim, možete dodati riječi s razmacima između.",
+        "already_in_queue": "Ne smijete to učiniti.",
+        "no_subqueue": "Nisu vas pustili ni u jedan podred.",
+        "character_delete_failed": "Brisanje znaka nije uspjelo. Molimo pokušajte ponovo.",
+        "not_optin": "Niste odabrani za dužnost administratora. (/mogućnost prebacivanja)"
+    },
+    "success": {
+        "server_opened": "Poslužitelj je otvoren",
+        "server_closed": "Poslužitelj je zatvoren",
+        "teleported_waypoint": "Teleportirano na međutočku.",
+        "character_deleted": "Lik izbrisan!",
+        "character_deleted_citizenid": "Uspješno ste izbrisali znak s ID-om građanina %s.",
+        "optin_set": "Uspješno ste odabrali %s za dužnost administratora."
+    },
+    "info": {
+        "received_paycheck": "Primili ste svoju plaću od %s dolara",
+        "job_info": "Job: %s | Grade: %s | Duty: %s",
+        "gang_info": "Grupa: %s | Ocjena: %s",
+        "on_duty": "Sada ste na dužnosti!",
+        "off_duty": "Sada ste van dužnosti!",
+        "checking_ban": "Pozdrav %s. Provjeravamo jeste li banovani.",
+        "join_server": "Dobrodošli %s u %s.",
+        "checking_whitelisted": "Pozdrav %s. Provjeravamo vaš džeparac.",
+        "exploit_banned": "Zabranjeni ste zbog varanja. Provjerite naš Discord za više informacija: %s",
+        "exploit_dropped": "Izbačeni ste zbog iskorištavanja",
+        "multichar_title": "Qbox Multichar",
+        "multichar_new_character": "Novi lik #%s",
+        "char_male": "Muško",
+        "char_female": "Žensko",
+        "play": "Igrati",
+        "play_description": "Igrajte kao %s",
+        "delete_character": "Izbriši Karaktera",
+        "delete_character_description": "Izbriši %s",
+        "logout_command_help": "Odjavljuje vas iz vašeg trenutnog lika",
+        "check_id": "Provjerite svoj ID poslužitelja",
+        "deletechar_command_help": "Brisanje lika igrača",
+        "deletechar_command_arg_player_id": "ID igraca",
+        "character_registration_title": "Registracija znakova",
+        "first_name": "Ime",
+        "last_name": "Prezime",
+        "nationality": "Nacionalnost",
+        "gender": "Seks",
+        "birth_date": "Datum rođenja",
+        "select_gender": "Odaberite svoj spol...",
+        "confirm_delete": "Jeste li sigurni da želite izbrisati ovaj znak?",
+        "in_queue": "🐌 Vi ste %s/%s u redu čekanja. (%s) %s",
+        "fetching_user": "Dohvaćanje korisnika...",
+        "creating_user": "Stvaranje korisnika..."
+    },
+    "command": {
+        "tp": {
+            "help": "TP igraču ili koordinatama (samo administrator)",
+            "params": {
+                "x": {
+                    "name": "id/x",
+                    "help": "ID igrača ili X pozicija"
+                },
+                "y": {
+                    "name": "y",
+                    "help": "Y pozicija"
+                },
+                "z": {
+                    "name": "z",
+                    "help": "Z položaj"
+                }
+            }
+        },
+        "tpm": {
+            "help": "TP do markera (samo administrator)"
+        },
+        "togglepvp": {
+            "help": "Uključi/isključi PVP na poslužitelju (samo administrator)"
+        },
+        "addpermission": {
+            "help": "Dajte dopuštenja igraču (samo Bogu)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igrača"
+                },
+                "permission": {
+                    "name": "dopuštenje",
+                    "help": "Razina dopuštenja"
+                }
+            }
+        },
+        "removepermission": {
+            "help": "Ukloni dopuštenja igrača (samo Bog)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igrača"
+                },
+                "permission": {
+                    "name": "dopuštenje",
+                    "help": "Razina dopuštenja"
+                }
+            }
+        },
+        "openserver": {
+            "help": "Otvorite poslužitelj za sve (samo administratori)"
+        },
+        "closeserver": {
+            "help": "Zatvorite poslužitelj za osobe bez dopuštenja (samo administratori)",
+            "params": {
+                "reason": {
+                    "name": "razlog",
+                    "help": "Razlog za zatvaranje (nije obavezno)"
+                }
+            }
+        },
+        "car": {
+            "help": "Spawn Vehicle (samo administrator)",
+            "params": {
+                "model": {
+                    "name": "model",
+                    "help": "Modeli"
+                },
+                "keepCurrentVehicle": {
+                    "name": "zadržati Trenutno Vozilo",
+                    "help": "Zadržite vozilo u kojem se trenutno nalazite (ostavite prazno za brisanje trenutnog vozila)"
+                }
+            }
+        },
+        "dv": {
+            "help": "Brisanje lika igrača",
+            "params": {
+                "radius": {
+                    "name": "radius",
+                    "help": "Radijus za brisanje vozila u (metrima)"
+                }
+            }
+        },
+        "givemoney": {
+            "help": "Dajte igraču novac (samo administrator)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igraca"
+                },
+                "moneytype": {
+                    "name": "vrsta novca",
+                    "help": "Vrsta novca (gotovina, banka, kripto)"
+                },
+                "amount": {
+                    "name": "iznositi",
+                    "help": "Iznos novca"
+                }
+            }
+        },
+        "setmoney": {
+            "help": "Postavite novčani iznos igrača (samo administrator)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igraca"
+                },
+                "moneytype": {
+                    "name": "vrsta novca",
+                    "help": "Vrsta novca (gotovina, banka, kripto)"
+                },
+                "amount": {
+                    "name": "iznositi",
+                    "help": "Iznos novca"
+                }
+            }
+        },
+        "job": {
+            "help": "Provjerite svoj posao"
+        },
+        "setjob": {
+            "help": "Postavite posao igrača (samo administrator)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igraca"
+                },
+                "job": {
+                    "name": "posao",
+                    "help": "Naziv posla"
+                },
+                "grade": {
+                    "name": "razred",
+                    "help": "Radna ocjena"
+                }
+            }
+        },
+        "changejob": {
+            "help": "Promjena aktivnog posla igrača (samo administrator)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igraca"
+                },
+                "job": {
+                    "name": "posao",
+                    "help": "Naziv posla"
+                }
+            }
+        },
+        "addjob": {
+            "help": "Dodavanje posla igraču (samo administrator)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igraca"
+                },
+                "job": {
+                    "name": "posao",
+                    "help": "Naziv posla"
+                },
+                "grade": {
+                    "name": "razred",
+                    "help": "Radna ocjena"
+                }
+            }
+        },
+        "removejob": {
+            "help": "Ukloni posao iz igrača (samo administrator)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igraca"
+                },
+                "job": {
+                    "name": "posao",
+                    "help": "Naziv posla"
+                }
+            }
+        },
+        "gang": {
+            "help": "Provjerite svoju družinu"
+        },
+        "setgang": {
+            "help": "Postavite skupinu igrača (samo administrator)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igraca"
+                },
+                "gang": {
+                    "name": "banda",
+                    "help": "Naziv bande"
+                },
+                "grade": {
+                    "name": "razred",
+                    "help": "Klasa bande"
+                }
+            }
+        },
+        "ooc": {
+            "help": "OOC chat poruka"
+        },
+        "me": {
+            "help": "Prikaži lokalnu poruku",
+            "params": {
+                "message": {
+                    "name": "poruka",
+                    "help": "Poruka za slanje"
+                }
+            }
+        },
+        "optin": {
+            "help": "Uključivanje/isključivanje za dužnost administratora (samo administrator)"
+        }
+    }
+}

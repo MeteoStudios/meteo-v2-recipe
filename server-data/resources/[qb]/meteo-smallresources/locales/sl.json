@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Samo za policista"
+  },
+  "afk": {
+    "will_kick": "Ste AFK in boste vrženi",
+    "time_seconds": "sekund!",
+    "time_minutes": "minut(e)!",
+    "kick_message": "Izgnali so te, ker si bil AFK"
+  },
+  "wash": {
+    "in_progress": "Vozilo je v pranju...",
+    "wash_vehicle": "Pranje vozila",
+    "wash_vehicle_target": "Pranje vozila",
+    "dirty": "Vozilo ni umazano",
+    "cancel": "Pranje preklicano...",
+    "no_money": "Nimaš dovolj denarja"
+  },
+  "consumables": {
+    "eat_progress": "Jesti ...",
+    "drink_progress": "pitje...",
+    "liqour_progress": "Pitje alkoholnih pijač ...",
+    "coke_progress": "Hiter voh...",
+    "crack_progress": "Kajenje crack ...",
+    "ecstasy_progress": "Pops Pills",
+    "healing_progress": "Zdravljenje",
+    "meth_progress": "Meth za kadilce",
+    "joint_progress": "Svetlobni spoj...",
+    "use_parachute_progress": "Nadevanje padala...",
+    "pack_parachute_progress": "Pakiranje padala...",
+    "no_parachute": "Nimaš padala!",
+    "armor_full": "Imate že dovolj oklepov!",
+    "armor_empty": "Ne nosiš telovnika ...",
+    "armor_progress": "Oblačenje neprebojnih jopičev...",
+    "heavy_armor_progress": "Oblačenje neprebojnih jopičev...",
+    "remove_armor_progress": "Odstranjevanje neprebojnih jopičev...",
+    "canceled": "Preklicano ..."
+  },
+  "cruise": {
+    "unavailable": "Tempomat ni na voljo",
+    "activated": "Aktiviran tempomat",
+    "deactivated": "Tempomat izklopljen"
+  },
+  "editor": {
+    "started": "Začetek snemanja!",
+    "save": "Shranjen posnetek!",
+    "delete": "Izbrisan posnetek!",
+    "editor": "Kasneje aligator!"
+  },
+  "firework": {
+    "place_progress": "Postavitev ognjemeta...",
+    "canceled": "Preklicano ...",
+    "time_left": "Predstavitev ognjemeta v ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Pritrjevanje dirkalnega pasu",
+    "remove_harness_progress": "Odstranjevanje manšet za gležnje ...",
+    "no_car": "Nisi v avtu.",
+    "harness_on": "Varnostnega pasu ni mogoče preklopiti, ko je pas opremljen",
+    "harness_broken": "Vaš dirkalni pas se je zlomil!"
+  },
+  "teleport": {
+    "teleport_default": "Uporabite dvigalo"
+  },
+  "pushcar": {
+    "stop_push": "[E] Nehajte pritiskati"
+  }
+}

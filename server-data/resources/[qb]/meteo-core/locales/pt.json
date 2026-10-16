@@ -1,0 +1,288 @@
+{
+    "error": {
+        "not_online": "O jogador não está online.",
+        "wrong_format": "Formato inválido.",
+        "missing_args": "Não introduziste todos os argumentos. (x, y, z)",
+        "missing_args2": "Todos os argumentos têm de ser preenchidos!",
+        "no_access": "Não tens acesso a este comando.",
+        "company_too_poor": "A tua empresa está falida.",
+        "item_not_exist": "O item não existe.",
+        "too_heavy": "Inventário cheio.",
+        "location_not_exist": "Localização não existe.",
+        "duplicate_license": "Licença Rockstar duplicada encontrada.",
+        "no_valid_license": "Sem licença Rockstar válida.",
+        "not_whitelisted": "Não estás na whitelist.",
+        "server_already_open": "O servidor já se encontra aberto.",
+        "server_already_closed": "O servidor já se encontra fechado.",
+        "no_permission": "Não tens permissão para isso.",
+        "no_waypoint": "Sem marcador marcado.",
+        "tp_error": "Erro ao teleportar.",
+        "connecting_database_timeout": "Conexão com a base de dados esgotou o tempo limite. (O servidor SQL está ligado?)",
+        "connecting_error": "Ocorreu um erro ao conectar ao servidor. (Verifique a consola do seu servidor)",
+        "no_match_character_registration": "Nada além de letras é permitido, espaços em branco à direita também não são permitidos, e as palavras devem começar com uma letra maiúscula nos campos de entrada. No entanto, pode adicionar palavras com espaços entre elas.",
+        "already_in_queue": "Já estás na fila.",
+        "no_subqueue": "Não foste colocado em nenhuma sub-fila.",
+        "character_delete_failed": "A eliminação da personagem falhou. Tenta novamente.",
+        "not_optin": "Não estás inscrito no serviço de admin. (/optin para alternar)"
+    },
+    "success": {
+        "server_opened": "O servidor foi aberto.",
+        "server_closed": "O servidor foi fechado.",
+        "teleported_waypoint": "Teleportado para o marcador.",
+        "character_deleted": "Personagem apagado!",
+        "character_deleted_citizenid": "Personagem com o Citizen ID %s apagado com sucesso.",
+        "optin_set": "Inscreveste %s com sucesso no serviço de admin."
+    },
+    "info": {
+        "received_paycheck": "Recebeste o pagamento de %s€",
+        "job_info": "Emprego: %s | Grau: %s | Serviço: %s",
+        "gang_info": "Gangue: %s | Grau: %s",
+        "on_duty": "Agora estás de serviço!",
+        "off_duty": "Agora estás fora de serviço!",
+        "checking_ban": "Olá, %s. Estamos a verificar se estás banido.",
+        "join_server": "Bem-vindo %s a %s.",
+        "checking_whitelisted": "Olá %s. Estamos a verificar a whitelist.",
+        "exploit_banned": "Foste banido por uso de cheats. Discord: %s",
+        "exploit_dropped": "Foste expulso por uso de exploits.",
+        "multichar_title": "Personagens",
+        "multichar_new_character": "Nova Personagem #%s",
+        "char_male": "Masculino",
+        "char_female": "Feminino",
+        "play": "Jogar",
+        "play_description": "Jogar como %s",
+        "delete_character": "Apagar personagem",
+        "delete_character_description": "Apagar %s",
+        "logout_command_help": "Sair do personagem",
+        "check_id": "Verificar ID",
+        "deletechar_command_help": "Apagar o personagem de um jogador",
+        "deletechar_command_arg_player_id": "ID do jogador",
+        "character_registration_title": "Registo de Personagem",
+        "first_name": "Nome",
+        "last_name": "Apelido",
+        "nationality": "Nacionalidade",
+        "gender": "Género",
+        "birth_date": "Data de nascimento",
+        "select_gender": "Seleciona o teu género...",
+        "confirm_delete": "Tens a certeza de queres apagar esta personagem?",
+        "in_queue": "🐌 Estás na posição %s/%s na fila. (%s) %s",
+        "fetching_user": "A obter utilizador...",
+        "creating_user": "A criar utilizador..."
+    },
+    "command": {
+        "tp": {
+            "help": "TP para jogador ou coordenadas (Admin)",
+            "params": {
+                "x": {
+                    "name": "id/x",
+                    "help": "ID ou Posição X"
+                },
+                "y": {
+                    "name": "y",
+                    "help": "Posição Y"
+                },
+                "z": {
+                    "name": "z",
+                    "help": "Posição Z"
+                }
+            }
+        },
+        "tpm": {
+            "help": "TP para marcador (Admin)"
+        },
+        "togglepvp": {
+            "help": "Ativar/Desativar PVP no servidor (Apenas Admin)"
+        },
+        "addpermission": {
+            "help": "Dar permissão (God)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID"
+                },
+                "permission": {
+                    "name": "permissão",
+                    "help": "Permissão"
+                }
+            }
+        },
+        "removepermission": {
+            "help": "Remover permissão (God)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID"
+                },
+                "permission": {
+                    "name": "permissão",
+                    "help": "Permissão"
+                }
+            }
+        },
+        "openserver": {
+            "help": "Abrir servidor (Admin)"
+        },
+        "closeserver": {
+            "help": "Fechar servidor (Admin)",
+            "params": {
+                "reason": {
+                    "name": "motivo",
+                    "help": "Motivo"
+                }
+            }
+        },
+        "car": {
+            "help": "Gerar veículo (Admin)",
+            "params": {
+                "model": {
+                    "name": "modelo",
+                    "help": "Modelo do veículo"
+                },
+                "keepCurrentVehicle": {
+                    "name": "keepCurrentVehicle",
+                    "help": "Manter o veículo atual? (deixar em branco para apagar)"
+                }
+            }
+        },
+        "dv": {
+            "help": "Apagar veículo (Admin)",
+            "params": {
+                "radius": {
+                    "name": "raio",
+                    "help": "Apagar num raio (metros)"
+                }
+            }
+        },
+        "givemoney": {
+            "help": "Dar dinheiro (Admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID"
+                },
+                "moneytype": {
+                    "name": "moneytype",
+                    "help": "cash, bank, crypto"
+                },
+                "amount": {
+                    "name": "quantidade",
+                    "help": "Quantidade"
+                }
+            }
+        },
+        "setmoney": {
+            "help": "Definir dinheiro (Admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID"
+                },
+                "moneytype": {
+                    "name": "moneytype",
+                    "help": "cash, bank, crypto"
+                },
+                "amount": {
+                    "name": "quantidade",
+                    "help": "Quantidade"
+                }
+            }
+        },
+        "job": {
+            "help": "Verificar emprego"
+        },
+        "setjob": {
+            "help": "Definir emprego (Admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID"
+                },
+                "job": {
+                    "name": "trabalho",
+                    "help": "Emprego"
+                },
+                "grade": {
+                    "name": "grau",
+                    "help": "Grau"
+                }
+            }
+        },
+        "changejob": {
+            "help": "Alterar emprego ativo (Admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "Jogador"
+                },
+                "job": {
+                    "name": "trabalho",
+                    "help": "Emprego"
+                }
+            }
+        },
+        "addjob": {
+            "help": "Adicionar emprego (Apenas Admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID"
+                },
+                "job": {
+                    "name": "trabalho",
+                    "help": "Emprego"
+                },
+                "grade": {
+                    "name": "grau",
+                    "help": "Grau"
+                }
+            }
+        },
+        "removejob": {
+            "help": "Remover emprego (Admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID"
+                },
+                "job": {
+                    "name": "trabalho",
+                    "help": "Emprego"
+                }
+            }
+        },
+        "gang": {
+            "help": "Verificar a tua gangue"
+        },
+        "setgang": {
+            "help": "Definir gangue (Admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID"
+                },
+                "gang": {
+                    "name": "gangue",
+                    "help": "Nome da gangue"
+                },
+                "grade": {
+                    "name": "grau",
+                    "help": "Grau"
+                }
+            }
+        },
+        "ooc": {
+            "help": "Mensagem OOC"
+        },
+        "me": {
+            "help": "Falar fora de RP",
+            "params": {
+                "message": {
+                    "name": "mensagem",
+                    "help": "Ação a simular"
+                }
+            }
+        },
+        "optin": {
+            "help": "Alternar adesão ao serviço de admin (Apenas Admin)"
+        }
+    }
+}

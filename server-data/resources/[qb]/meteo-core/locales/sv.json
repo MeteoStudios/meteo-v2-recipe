@@ -1,0 +1,288 @@
+{
+    "error": {
+        "not_online": "Spelaren är inte online.",
+        "wrong_format": "Felaktigt format.",
+        "missing_args": "Alla argument har inte angetts (x, y, z).",
+        "missing_args2": "Alla argument måste fyllas i!",
+        "no_access": "Du har inte tillgång till detta kommando.",
+        "company_too_poor": "Din arbetsgivare har inte råd.",
+        "item_not_exist": "Föremålet finns inte.",
+        "too_heavy": "Ditt förråd är fullt!",
+        "location_not_exist": "Platsen finns inte",
+        "duplicate_license": "Duplicerad Rockstar-licens hittades.",
+        "no_valid_license": "Ingen giltig Rockstar-licens hittades.",
+        "not_whitelisted": "Du är inte vitlistad på servern.",
+        "server_already_open": "Servern är redan öppen.",
+        "server_already_closed": "Servern är redan stängd.",
+        "no_permission": "Du har inte behörighet för detta.",
+        "no_waypoint": "Du har inte satt någon vägpunkt.",
+        "tp_error": "Ett fel uppstod vid teleporteringen.",
+        "connecting_database_timeout": "Anslutning till databasen avbröts. (Är SQL-servern startad?)",
+        "connecting_error": "Ett fel uppstod vid anslutning till servern. (Kontrollera din server-konsol.)",
+        "no_match_character_registration": "Endast bokstäver är tillåtna. Första bokstaven måste vara en versal. Mellanslag är tillåtet mellan ord.",
+        "already_in_queue": "Du står redan i kö.",
+        "no_subqueue": "Du blev inte godkänd i den sekundära kön.",
+        "character_delete_failed": "Radering av karaktär misslyckades. Försök igen.",
+        "not_optin": "Du är inte anmäld till admintjänst. (/optin för att växla)"
+    },
+    "success": {
+        "server_opened": "Servern har öppnats.",
+        "server_closed": "Servern har stängts.",
+        "teleported_waypoint": "Teleporterad till vägpunkten.",
+        "character_deleted": "Karaktären har tagits bort!",
+        "character_deleted_citizenid": "Karaktären med Citizen ID %s togs bort.",
+        "optin_set": "Du har anmält %s till admintjänst."
+    },
+    "info": {
+        "received_paycheck": "Du fick din lön på %s SEK.",
+        "job_info": "Jobb: %s | Grad: %s | I tjänst: %s",
+        "gang_info": "Gäng: %s | Grad: %s",
+        "on_duty": "Du är nu i tjänst!",
+        "off_duty": "Du är nu inte i tjänst!",
+        "checking_ban": "Hej %s. Vi kontrollerar om du är bannlyst.",
+        "join_server": "Välkommen %s till %s!",
+        "checking_whitelisted": "Hej %s. Vi kontrollerar ditt medlemskap.",
+        "exploit_banned": "Du har blivit bannlyst för fusk. Besök vår Discord för mer information: %s",
+        "exploit_dropped": "Du har blivit utslängd för att ha utnyttjat en bugg.",
+        "multichar_title": "Qbox Multichar",
+        "multichar_new_character": "Ny karaktär #%s",
+        "char_male": "Man",
+        "char_female": "Kvinna",
+        "play": "Spela",
+        "play_description": "Spela som %s.",
+        "delete_character": "Ta bort karaktär",
+        "delete_character_description": "Ta bort karaktären %s.",
+        "logout_command_help": "Loggar ut från nuvarande karaktär.",
+        "check_id": "Kontrollera ditt Server-ID.",
+        "deletechar_command_help": "Ta bort en spelares karaktär.",
+        "deletechar_command_arg_player_id": "Spelar-ID",
+        "character_registration_title": "Registrera karaktär",
+        "first_name": "Förnamn",
+        "last_name": "Efternamn",
+        "nationality": "Nationalitet",
+        "gender": "Kön",
+        "birth_date": "Födelsedatum",
+        "select_gender": "Välj kön...",
+        "confirm_delete": "Är du säker på att du vill ta bort denna karaktär?",
+        "in_queue": "🐌 Du är %s/%s i kö (%s). %s",
+        "fetching_user": "Hämtar användare...",
+        "creating_user": "Skapar användare..."
+    },
+    "command": {
+        "tp": {
+            "help": "Teleportera till en spelare eller koordinater. (Endast admin)",
+            "params": {
+                "x": {
+                    "name": "id/x",
+                    "help": "Spelar-ID eller X-koordinat"
+                },
+                "y": {
+                    "name": "y",
+                    "help": "Y-koordinat"
+                },
+                "z": {
+                    "name": "z",
+                    "help": "Z-koordinat"
+                }
+            }
+        },
+        "tpm": {
+            "help": "Teleportera till vägpunkt. (Endast admin)"
+        },
+        "togglepvp": {
+            "help": "Växla PVP på servern. (Endast admin)"
+        },
+        "addpermission": {
+            "help": "Ge en spelare behörigheter. (Endast gudsnivå)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "Spelar-ID"
+                },
+                "permission": {
+                    "name": "behörighet",
+                    "help": "Behörighetsnivå"
+                }
+            }
+        },
+        "removepermission": {
+            "help": "Ta bort en spelares behörigheter. (Endast gudsnivå)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "Spelar-ID"
+                },
+                "permission": {
+                    "name": "behörighet",
+                    "help": "Behörighetsnivå"
+                }
+            }
+        },
+        "openserver": {
+            "help": "Öppna servern för alla. (Endast admin)"
+        },
+        "closeserver": {
+            "help": "Stäng servern för spelare utan behörighet. (Endast admin)",
+            "params": {
+                "reason": {
+                    "name": "anledning",
+                    "help": "Ange en anledning för stängningen. (Valfritt)"
+                }
+            }
+        },
+        "car": {
+            "help": "Spawna ett fordon. (Endast admin)",
+            "params": {
+                "model": {
+                    "name": "modell",
+                    "help": "Fordonsmodellens namn."
+                },
+                "keepCurrentVehicle": {
+                    "name": "keepCurrentVehicle",
+                    "help": "Behåll nuvarande fordon. (Lämna tomt för att ta bort)"
+                }
+            }
+        },
+        "dv": {
+            "help": "Ta bort fordon. (Endast admin)",
+            "params": {
+                "radius": {
+                    "name": "radie",
+                    "help": "Radien (i meter) att ta bort fordon inom."
+                }
+            }
+        },
+        "givemoney": {
+            "help": "Ge en spelare pengar. (Endast admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "Spelar-ID"
+                },
+                "moneytype": {
+                    "name": "moneytype",
+                    "help": "Typ av valuta (kontanter, bank, krypto)"
+                },
+                "amount": {
+                    "name": "mängd",
+                    "help": "Belopp att ge"
+                }
+            }
+        },
+        "setmoney": {
+            "help": "Sätt en spelares pengar. (Endast admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "Spelar-ID"
+                },
+                "moneytype": {
+                    "name": "moneytype",
+                    "help": "Typ av valuta (kontanter, bank, krypto)"
+                },
+                "amount": {
+                    "name": "mängd",
+                    "help": "Ange belopp"
+                }
+            }
+        },
+        "job": {
+            "help": "Kontrollera ditt jobb."
+        },
+        "setjob": {
+            "help": "Ändra en spelares jobb. (Endast admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "Spelar-ID"
+                },
+                "job": {
+                    "name": "jobb",
+                    "help": "Jobbnamn"
+                },
+                "grade": {
+                    "name": "grad",
+                    "help": "Jobbgrad"
+                }
+            }
+        },
+        "changejob": {
+            "help": "Ändra en spelares aktiva jobb. (Endast admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "Spelar-ID"
+                },
+                "job": {
+                    "name": "jobb",
+                    "help": "Jobbnamn"
+                }
+            }
+        },
+        "addjob": {
+            "help": "Lägg till ett jobb för en spelare. (Endast admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "Spelar-ID"
+                },
+                "job": {
+                    "name": "jobb",
+                    "help": "Jobbnamn"
+                },
+                "grade": {
+                    "name": "grad",
+                    "help": "Jobbgrad"
+                }
+            }
+        },
+        "removejob": {
+            "help": "Ta bort ett jobb från en spelare. (Endast admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "Spelar-ID"
+                },
+                "job": {
+                    "name": "jobb",
+                    "help": "Jobbnamn"
+                }
+            }
+        },
+        "gang": {
+            "help": "Kontrollera ditt gäng."
+        },
+        "setgang": {
+            "help": "Ställ in en spelares gäng. (Endast admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "Spelar-ID"
+                },
+                "gang": {
+                    "name": "gäng",
+                    "help": "Gängnamn"
+                },
+                "grade": {
+                    "name": "grad",
+                    "help": "Gänggrad"
+                }
+            }
+        },
+        "ooc": {
+            "help": "Skicka ett OOC-chattmeddelande."
+        },
+        "me": {
+            "help": "Visa ett lokalt meddelande.",
+            "params": {
+                "message": {
+                    "name": "meddelande",
+                    "help": "Meddelande att skicka."
+                }
+            }
+        },
+        "optin": {
+            "help": "Växla anmälan till admintjänst (endast admin)"
+        }
+    }
+}

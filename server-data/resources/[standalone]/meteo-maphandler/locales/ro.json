@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Ridicați liftul",
+    "target_lift_lower": "Coborâți ridicarea",
+    "target_door_unlock": "Debloca usa",
+    "target_door_lock": "Încuie ușa",
+    "notify_no_access": "Nu ai acces la asta",
+    "notify_busy": "Așteptați să se oprească din mișcare",
+    "notify_locked": "Ușa blocată",
+    "notify_unlocked": "Usa desfacuta"
+}

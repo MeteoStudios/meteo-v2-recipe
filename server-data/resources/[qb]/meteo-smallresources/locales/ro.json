@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Doar pentru politisti"
+  },
+  "afk": {
+    "will_kick": "Esti AFK si vei fi dat afara in",
+    "time_seconds": "secunde!",
+    "time_minutes": "minut(e)!",
+    "kick_message": "Ai fost dat afara pentru AFK"
+  },
+  "wash": {
+    "in_progress": "Masina se spala...",
+    "wash_vehicle": "Spala masina",
+    "wash_vehicle_target": "Spala masina",
+    "dirty": "Masina nu este murdara",
+    "cancel": "Spalarea anulata...",
+    "no_money": "Nu ai destui bani"
+  },
+  "consumables": {
+    "eat_progress": "Se mananca...",
+    "drink_progress": "Se bea...",
+    "liqour_progress": "Se bea lichior...",
+    "coke_progress": "Inhalatii rapide...",
+    "crack_progress": "Se fumeaza crack...",
+    "ecstasy_progress": "Se iau pastile",
+    "healing_progress": "Se vindeca",
+    "meth_progress": "Se fumeaza metafetamina",
+    "joint_progress": "Se aprindeaza jointul...",
+    "use_parachute_progress": "Se pune parasuita...",
+    "pack_parachute_progress": "Se impacheteaza parasuita...",
+    "no_parachute": "Nu ai parasuita!",
+    "armor_full": "Ai deja destula armura!",
+    "armor_empty": "Nu porturi vesta...",
+    "armor_progress": "Se pune vesta...",
+    "heavy_armor_progress": "Se pune vesta usoara...",
+    "remove_armor_progress": "Se scoate vesta...",
+    "canceled": "Anulat..."
+  },
+  "cruise": {
+    "unavailable": "Cruise control indisponibil",
+    "activated": "Cruise control activat",
+    "deactivated": "Cruise control dezactivat"
+  },
+  "editor": {
+    "started": "Inregistrare inceput!",
+    "save": "Inregistrare salvat!",
+    "delete": "Inregistrare sters!",
+    "editor": "Pana mai tarziu!"
+  },
+  "firework": {
+    "place_progress": "Se plaseaza artificii...",
+    "canceled": "Anulat...",
+    "time_left": "Lansat artificii in ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Se ataseaza curele de siguranta",
+    "remove_harness_progress": "Se scot curele de siguranta",
+    "no_car": "Nu esti intr-o masina.",
+    "harness_on": "Nu poti comuta centura in timp ce ai curele de siguranta",
+    "harness_broken": "Curelele tale de siguranta s-au rupt!"
+  },
+  "teleport": {
+    "teleport_default": "Folosesti liftul"
+  },
+  "pushcar": {
+    "stop_push": "[E] Opreste impingerea"
+  }
+}

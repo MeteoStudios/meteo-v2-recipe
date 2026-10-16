@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Alleen voor Politieagenten"
+  },
+  "afk": {
+    "will_kick": "Je bent AFK en wordt over",
+    "time_seconds": "seconden gekickt!",
+    "time_minutes": "minuut(en) gekickt!",
+    "kick_message": "Je bent gekickt voor AFK"
+  },
+  "wash": {
+    "in_progress": "Voertuig wordt gewassen...",
+    "wash_vehicle": "Voertuig wassen",
+    "wash_vehicle_target": "Voertuig wassen",
+    "dirty": "Het voertuig is niet vuil",
+    "cancel": "Wassen geannuleerd...",
+    "no_money": "Je hebt niet genoeg geld"
+  },
+  "consumables": {
+    "eat_progress": "Eten...",
+    "drink_progress": "Drinken...",
+    "liqour_progress": "Alcohol drinken...",
+    "coke_progress": "Snel snuiven...",
+    "crack_progress": "Crack roken...",
+    "ecstasy_progress": "Pillen innemen",
+    "healing_progress": "Genezen",
+    "meth_progress": "Meth roken",
+    "joint_progress": "Joint aansteken...",
+    "use_parachute_progress": "Parachute aantrekken...",
+    "pack_parachute_progress": "Parachute inpakken...",
+    "no_parachute": "Je hebt geen parachute!",
+    "armor_full": "Je hebt al genoeg pantsering!",
+    "armor_empty": "Je draagt geen vest...",
+    "armor_progress": "Pantsering aantrekken...",
+    "heavy_armor_progress": "Zware pantsering aantrekken...",
+    "remove_armor_progress": "Pantsering uitdoen...",
+    "canceled": "Geannuleerd..."
+  },
+  "cruise": {
+    "unavailable": "Cruise control niet beschikbaar",
+    "activated": "Cruise control geactiveerd",
+    "deactivated": "Cruise control gedeactiveerd"
+  },
+  "editor": {
+    "started": "Opname gestart!",
+    "save": "Opname opgeslagen!",
+    "delete": "Opname verwijderd!",
+    "editor": "Tot ziens!"
+  },
+  "firework": {
+    "place_progress": "Vuurwerk plaatsen...",
+    "canceled": "Geannuleerd...",
+    "time_left": "Vuurwerk lanceert in ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Racegordel aanbrengen",
+    "remove_harness_progress": "Racegordel verwijderen",
+    "no_car": "Je zit niet in een auto.",
+    "harness_on": "Kan veiligheidsgordel niet omschakelen terwijl racegordel is bevestigd",
+    "harness_broken": "Je racegordel is kapot!"
+  },
+  "teleport": {
+    "teleport_default": "Gebruik de Lift"
+  },
+  "pushcar": {
+    "stop_push": "[E] Stop met duwen"
+  }
+}

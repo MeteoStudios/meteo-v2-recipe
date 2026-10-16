@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Tõstke tõstuk üles",
+    "target_lift_lower": "Alumine tõstuk",
+    "target_door_unlock": "Avage uks",
+    "target_door_lock": "Lukusta uks",
+    "notify_no_access": "Teil pole sellele juurdepääsu",
+    "notify_busy": "Oodake, kuni see peatub",
+    "notify_locked": "Uks lukus",
+    "notify_unlocked": "Uks lahti võetud"
+}

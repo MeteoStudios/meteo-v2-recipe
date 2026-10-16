@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Tik policijos pareigūnui"
+  },
+  "afk": {
+    "will_kick": "Jūs esate AFK ir būsite įtrauktas",
+    "time_seconds": "sekundžių!",
+    "time_minutes": "minutė (-ės)!",
+    "kick_message": "Buvai nuspirtas už tai, kad esi AFK"
+  },
+  "wash": {
+    "in_progress": "Automobilis plaunamas...",
+    "wash_vehicle": "Plauti Transporto priemonę",
+    "wash_vehicle_target": "Plauti Transporto priemonę",
+    "dirty": "Transporto priemonė nėra nešvari",
+    "cancel": "Skalbimas atšauktas...",
+    "no_money": "Jūs neturite pakankamai pinigų"
+  },
+  "consumables": {
+    "eat_progress": "Valgant...",
+    "drink_progress": "Gerti...",
+    "liqour_progress": "Gerti alkoholį...",
+    "coke_progress": "Greitas pauostymas...",
+    "crack_progress": "Rūkantis krekas...",
+    "ecstasy_progress": "Pops tabletės",
+    "healing_progress": "Gydymas",
+    "meth_progress": "Smoking Ass Meth",
+    "joint_progress": "Apšvietimo jungtis...",
+    "use_parachute_progress": "Užsidėti parašiutu...",
+    "pack_parachute_progress": "Pakavimo parašiutas...",
+    "no_parachute": "Jūs neturite parašiuto!",
+    "armor_full": "Jūs jau turite pakankamai šarvų!",
+    "armor_empty": "Tu nedėvi liemenės...",
+    "armor_progress": "Uždėti šarvus...",
+    "heavy_armor_progress": "Užsidėti šarvus...",
+    "remove_armor_progress": "Nuėmus liemenes...",
+    "canceled": "Atšaukta..."
+  },
+  "cruise": {
+    "unavailable": "Kruizo kontrolė nepasiekiama",
+    "activated": "Įjungta pastovaus greičio palaikymo sistema",
+    "deactivated": "Kruizo kontrolė išjungta"
+  },
+  "editor": {
+    "started": "Pradėtas įrašinėti!",
+    "save": "Išsaugotas įrašas!",
+    "delete": "Ištrintas įrašas!",
+    "editor": "Vėliau aligatorius!"
+  },
+  "firework": {
+    "place_progress": "Dedame fejerverkus...",
+    "canceled": "Atšaukta...",
+    "time_left": "Fejerverkų paleidimas ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Lenktynių diržų tvirtinimas",
+    "remove_harness_progress": "Lenktynių diržų nuėmimas",
+    "no_car": "Tu ne automobilyje.",
+    "harness_on": "Negalite perjungti saugos diržo, kai yra saugos diržai",
+    "harness_broken": "Jūsų lenktynių diržai sugedo!"
+  },
+  "teleport": {
+    "teleport_default": "Naudokite liftą"
+  },
+  "pushcar": {
+    "stop_push": "[E] Nustokite stumti"
+  }
+}

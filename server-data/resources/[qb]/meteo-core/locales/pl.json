@@ -1,0 +1,288 @@
+{
+    "error": {
+        "not_online": "Gracz nie jest online",
+        "wrong_format": "Nieprawidłowy format",
+        "missing_args": "Nie wszystkie argumenty zostały podane (x, y, z)",
+        "missing_args2": "Wszystkie argumenty muszą być wypełnione!",
+        "no_access": "Brak dostępu do tej komendy",
+        "company_too_poor": "Twój pracodawca jest bez środków",
+        "item_not_exist": "Przedmiot nie istnieje",
+        "too_heavy": "Ekwipunek jest zbyt pełny",
+        "location_not_exist": "Lokalizacja nie istnieje",
+        "duplicate_license": "Znaleziono zduplikowaną licencję Rockstar",
+        "no_valid_license": "Nie znaleziono ważnej licencji Rockstar",
+        "not_whitelisted": "Nie jesteś na liście dostępu do tego serwera",
+        "server_already_open": "Serwer jest już otwarty",
+        "server_already_closed": "Serwer jest już zamknięty",
+        "no_permission": "Nie masz uprawnień do tego...",
+        "no_waypoint": "Nie ustawiono punktu docelowego.",
+        "tp_error": "Błąd podczas teleportacji.",
+        "connecting_database_timeout": "Przekroczono czas połączenia z bazą danych. (Czy serwer SQL jest włączony?)",
+        "connecting_error": "Wystąpił błąd podczas łączenia z serwerem. (Sprawdź konsolę serwera)",
+        "no_match_character_registration": "Dozwolone są tylko litery, spacje między słowami oraz słowa zaczynające się od wielkiej litery. Nie można używać znaków specjalnych ani białych znaków na końcu.",
+        "already_in_queue": "Jesteś już w kolejce.",
+        "no_subqueue": "Nie uzyskano dostępu do żadnej podkolejki.",
+        "character_delete_failed": "Usunięcie postaci nie powiodło się. Spróbuj ponownie.",
+        "not_optin": "Nie zostałeś przyjęty na stanowisko administratora. (/opt aby przełączyć)"
+    },
+    "success": {
+        "server_opened": "Serwer został otwarty",
+        "server_closed": "Serwer został zamknięty",
+        "teleported_waypoint": "Teleportowano do punktu docelowego.",
+        "character_deleted": "Postać usunięta!",
+        "character_deleted_citizenid": "Pomyślnie usunięto postać z Citizen ID %s.",
+        "optin_set": "Pomyślnie wybrałeś %s na stanowisko administratora."
+    },
+    "info": {
+        "received_paycheck": "Otrzymano wypłatę w wysokości $%s",
+        "job_info": "Praca: %s | Stopień: %s | Służba: %s",
+        "gang_info": "Gang: %s | Stopień: %s",
+        "on_duty": "Jesteś teraz na służbie!",
+        "off_duty": "Jesteś teraz poza służbą!",
+        "checking_ban": "Witaj %s. Sprawdzamy, czy jesteś zbanowany.",
+        "join_server": "Witaj %s na %s.",
+        "checking_whitelisted": "Witaj %s. Sprawdzamy twoje uprawnienia.",
+        "exploit_banned": "Zbanowano za oszustwo. Sprawdź nasz Discord, aby uzyskać więcej informacji: %s",
+        "exploit_dropped": "Wyrzucono za wykorzystywanie błędów",
+        "multichar_title": "Qbox Multichar",
+        "multichar_new_character": "Nowa postać #%s",
+        "char_male": "Mężczyzna",
+        "char_female": "Kobieta",
+        "play": "Graj",
+        "play_description": "Graj jako %s",
+        "delete_character": "Usuń postać",
+        "delete_character_description": "Usuń %s",
+        "logout_command_help": "Wylogowuje cię z bieżącej postaci",
+        "check_id": "Sprawdź swoje ID serwera",
+        "deletechar_command_help": "Usuń postać gracza",
+        "deletechar_command_arg_player_id": "ID gracza",
+        "character_registration_title": "Rejestracja postaci",
+        "first_name": "Imię",
+        "last_name": "Nazwisko",
+        "nationality": "Narodowość",
+        "gender": "Płeć",
+        "birth_date": "Data urodzenia",
+        "select_gender": "Wybierz płeć...",
+        "confirm_delete": "Czy na pewno chcesz usunąć tę postać?",
+        "in_queue": "🐌 Jesteś %s/%s w kolejce. (%s) %s",
+        "fetching_user": "Pobieram użytkownika...",
+        "creating_user": "Tworzenie użytkownika..."
+    },
+    "command": {
+        "tp": {
+            "help": "Teleportuj do gracza lub współrzędnych (Tylko admin)",
+            "params": {
+                "x": {
+                    "name": "identyfikator/x",
+                    "help": "ID gracza lub pozycja X"
+                },
+                "y": {
+                    "name": "y",
+                    "help": "Pozycja Y"
+                },
+                "z": {
+                    "name": "z",
+                    "help": "Pozycja Z"
+                }
+            }
+        },
+        "tpm": {
+            "help": "Teleportuj do znacznika (Tylko admin)"
+        },
+        "togglepvp": {
+            "help": "Przełącz PVP na serwerze (Tylko admin)"
+        },
+        "addpermission": {
+            "help": "Nadaj graczowi uprawnienia (Tylko bogowie)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID gracza"
+                },
+                "permission": {
+                    "name": "pozwolenie",
+                    "help": "Poziom uprawnień"
+                }
+            }
+        },
+        "removepermission": {
+            "help": "Odbierz graczowi uprawnienia (Tylko bogowie)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID gracza"
+                },
+                "permission": {
+                    "name": "pozwolenie",
+                    "help": "Poziom uprawnień"
+                }
+            }
+        },
+        "openserver": {
+            "help": "Otwórz serwer dla wszystkich (Tylko admin)"
+        },
+        "closeserver": {
+            "help": "Zamknij serwer dla osób bez uprawnień (Tylko admin)",
+            "params": {
+                "reason": {
+                    "name": "powód",
+                    "help": "Powód zamknięcia (opcjonalnie)"
+                }
+            }
+        },
+        "car": {
+            "help": "Stwórz pojazd (Tylko admin)",
+            "params": {
+                "model": {
+                    "name": "model",
+                    "help": "Nazwa modelu pojazdu"
+                },
+                "keepCurrentVehicle": {
+                    "name": "zachowaj bieżący pojazd",
+                    "help": "Zachowaj obecny pojazd (pozostaw puste, aby usunąć obecny pojazd)"
+                }
+            }
+        },
+        "dv": {
+            "help": "Usuń pojazd (Tylko admin)",
+            "params": {
+                "radius": {
+                    "name": "promień",
+                    "help": "Promień usuwania pojazdów (w metrach)"
+                }
+            }
+        },
+        "givemoney": {
+            "help": "Daj graczowi pieniądze (Tylko admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID gracza"
+                },
+                "moneytype": {
+                    "name": "rodzaj pieniędzy",
+                    "help": "Typ pieniędzy (gotówka, bank, krypto)"
+                },
+                "amount": {
+                    "name": "kwota",
+                    "help": "Kwota pieniędzy"
+                }
+            }
+        },
+        "setmoney": {
+            "help": "Ustaw kwotę pieniędzy gracza (Tylko admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID gracza"
+                },
+                "moneytype": {
+                    "name": "rodzaj pieniędzy",
+                    "help": "Typ pieniędzy (gotówka, bank, krypto)"
+                },
+                "amount": {
+                    "name": "kwota",
+                    "help": "Kwota pieniędzy"
+                }
+            }
+        },
+        "job": {
+            "help": "Sprawdź swoją pracę"
+        },
+        "setjob": {
+            "help": "Ustaw pracę gracza (Tylko admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID gracza"
+                },
+                "job": {
+                    "name": "stanowisko",
+                    "help": "Nazwa pracy"
+                },
+                "grade": {
+                    "name": "stopień",
+                    "help": "Stopień pracy"
+                }
+            }
+        },
+        "changejob": {
+            "help": "Zmień aktywną pracę gracza (Tylko admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID gracza"
+                },
+                "job": {
+                    "name": "stanowisko",
+                    "help": "Nazwa pracy"
+                }
+            }
+        },
+        "addjob": {
+            "help": "Dodaj pracę graczowi (Tylko admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID gracza"
+                },
+                "job": {
+                    "name": "stanowisko",
+                    "help": "Nazwa pracy"
+                },
+                "grade": {
+                    "name": "stopień",
+                    "help": "Stopień pracy"
+                }
+            }
+        },
+        "removejob": {
+            "help": "Usuń pracę graczowi (Tylko admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID gracza"
+                },
+                "job": {
+                    "name": "stanowisko",
+                    "help": "Nazwa pracy"
+                }
+            }
+        },
+        "gang": {
+            "help": "Sprawdź swój gang"
+        },
+        "setgang": {
+            "help": "Ustaw gang gracza (Tylko admin)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID gracza"
+                },
+                "gang": {
+                    "name": "gang",
+                    "help": "Nazwa gangu"
+                },
+                "grade": {
+                    "name": "stopień",
+                    "help": "Stopień gangu"
+                }
+            }
+        },
+        "ooc": {
+            "help": "Wiadomość na czacie OOC"
+        },
+        "me": {
+            "help": "Wyświetl lokalną wiadomość",
+            "params": {
+                "message": {
+                    "name": "wiadomość",
+                    "help": "Wiadomość do wysłania"
+                }
+            }
+        },
+        "optin": {
+            "help": "Przełącz zgodę na obowiązki administratora (tylko administrator)"
+        }
+    }
+}

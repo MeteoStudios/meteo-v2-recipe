@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Yalnızca Polis Memuru İçin"
+  },
+  "afk": {
+    "will_kick": "Siz AFK'sınız ve atılacaksınız",
+    "time_seconds": "saniye!",
+    "time_minutes": "dakika(lar)!",
+    "kick_message": "AFK olduğunuz için atıldınız"
+  },
+  "wash": {
+    "in_progress": "Araç yıkanıyor...",
+    "wash_vehicle": "Araç Yıkama",
+    "wash_vehicle_target": "Araç Yıkama",
+    "dirty": "Araç kirli değil",
+    "cancel": "Yıkama iptal edildi...",
+    "no_money": "Yeterli paran yok"
+  },
+  "consumables": {
+    "eat_progress": "Yiyor...",
+    "drink_progress": "İçme...",
+    "liqour_progress": "İçki içmek...",
+    "coke_progress": "Hızlı koklama...",
+    "crack_progress": "Sigara çatlağı...",
+    "ecstasy_progress": "Pop hapları",
+    "healing_progress": "İyileştirme",
+    "meth_progress": "sigara içme eşek meth",
+    "joint_progress": "Aydınlatma ortak...",
+    "use_parachute_progress": "Paraşüt takmak...",
+    "pack_parachute_progress": "Paraşüt paketleme...",
+    "no_parachute": "Paraşütün yok!",
+    "armor_full": "Zaten yeterince zırhınız var!",
+    "armor_empty": "Yelek giymiyorsun...",
+    "armor_progress": "Vücut zırhını giymek...",
+    "heavy_armor_progress": "Vücut zırhını giymek...",
+    "remove_armor_progress": "Vücut zırhının çıkarılması...",
+    "canceled": "İptal edildi..."
+  },
+  "cruise": {
+    "unavailable": "Hız sabitleyici mevcut değil",
+    "activated": "Hız sabitleyici etkinleştirildi",
+    "deactivated": "Hız sabitleyici devre dışı bırakıldı"
+  },
+  "editor": {
+    "started": "Kayıtlara Başlandı!",
+    "save": "Kayıt Kaydedildi!",
+    "delete": "Kayıt Silindi!",
+    "editor": "Sonra görüşürüz!"
+  },
+  "firework": {
+    "place_progress": "Havai fişek yerleştirmek...",
+    "canceled": "İptal edildi...",
+    "time_left": "~r~'da havai fişek lansmanı"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Yarış Kemerinin Takılması",
+    "remove_harness_progress": "Yarış Kemerinin Çıkarılması",
+    "no_car": "Arabada değilsin.",
+    "harness_on": "Emniyet kemeri takılıyken emniyet kemeri değiştirilemiyor",
+    "harness_broken": "Yarış koşum takımınız kırıldı!"
+  },
+  "teleport": {
+    "teleport_default": "Asansörü Kullan"
+  },
+  "pushcar": {
+    "stop_push": "[E] İtmeyi Durdur"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Nur fur Polizeibeamte"
+  },
+  "afk": {
+    "will_kick": "Du bist AFK und wirst in gekickt",
+    "time_seconds": "Sekunden!",
+    "time_minutes": "Minute(n)!",
+    "kick_message": "Du wurdest fur AFK gekickt"
+  },
+  "wash": {
+    "in_progress": "Fahrzeug wird gewaschen...",
+    "wash_vehicle": "Fahrzeug waschen",
+    "wash_vehicle_target": "Fahrzeug waschen",
+    "dirty": "Das Fahrzeug ist nicht schmutzig",
+    "cancel": "Waschen abgebrochen...",
+    "no_money": "Du hast nicht genug Geld"
+  },
+  "consumables": {
+    "eat_progress": "Essen...",
+    "drink_progress": "Trinken...",
+    "liqour_progress": "Alkohol trinken...",
+    "coke_progress": "Schnell ziehen...",
+    "crack_progress": "Crack rauchen...",
+    "ecstasy_progress": "Pillen nehmen",
+    "healing_progress": "Heilen",
+    "meth_progress": "Meth rauchen",
+    "joint_progress": "Joint anzunden...",
+    "use_parachute_progress": "Fallschirm anlegen...",
+    "pack_parachute_progress": "Fallschirm packen...",
+    "no_parachute": "Du hast keinen Fallschirm!",
+    "armor_full": "Du hast bereits genug Panzerung!",
+    "armor_empty": "Du tragst keine Weste...",
+    "armor_progress": "Panzerung anlegen...",
+    "heavy_armor_progress": "Schwere Panzerung anlegen...",
+    "remove_armor_progress": "Panzerung entfernen...",
+    "canceled": "Abgebrochen..."
+  },
+  "cruise": {
+    "unavailable": "Tempomat nicht verfugbar",
+    "activated": "Tempomat aktiviert",
+    "deactivated": "Tempomat deaktiviert"
+  },
+  "editor": {
+    "started": "Aufnahme gestartet!",
+    "save": "Aufnahme gespeichert!",
+    "delete": "Aufnahme geloscht!",
+    "editor": "Bis spater!"
+  },
+  "firework": {
+    "place_progress": "Feuerwerk wird platziert...",
+    "canceled": "Abgebrochen...",
+    "time_left": "Feuerwerk startet in ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Renngurt anbringen",
+    "remove_harness_progress": "Renngurt entfernen",
+    "no_car": "Du bist nicht in einem Auto.",
+    "harness_on": "Kann den Sicherheitsgurt nicht umschalten, wahrend der Renngurt angelegt ist",
+    "harness_broken": "Dein Renngurt ist gerissen!"
+  },
+  "teleport": {
+    "teleport_default": "Benutze den Aufzug"
+  },
+  "pushcar": {
+    "stop_push": "[E] Schieben beenden"
+  }
+}

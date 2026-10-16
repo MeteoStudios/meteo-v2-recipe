@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Повдигнете лифта",
+    "target_lift_lower": "Долно повдигане",
+    "target_door_unlock": "Отключи вратата",
+    "target_door_lock": "Заключете вратата",
+    "notify_no_access": "Вие нямате достъп до това",
+    "notify_busy": "Изчакайте да спре да се движи",
+    "notify_locked": "Вратата е заключена",
+    "notify_unlocked": "Врата отворена"
+}

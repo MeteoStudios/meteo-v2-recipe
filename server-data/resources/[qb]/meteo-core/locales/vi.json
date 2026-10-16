@@ -1,0 +1,288 @@
+{
+    "error": {
+        "not_online": "Người chơi không trực tuyến",
+        "wrong_format": "Định dạng không chính xác",
+        "missing_args": "Không phải mọi đối số đều được nhập (x, y, z)",
+        "missing_args2": "Tất cả các đối số phải được điền vào!",
+        "no_access": "Không có quyền truy cập vào lệnh này",
+        "company_too_poor": "Chủ của bạn bị phá sản",
+        "item_not_exist": "Mục không tồn tại",
+        "too_heavy": "Hàng tồn kho quá đầy",
+        "location_not_exist": "Vị trí không tồn tại",
+        "duplicate_license": "Đã tìm thấy giấy phép Rockstar trùng lặp",
+        "no_valid_license": "Không tìm thấy giấy phép Rockstar hợp lệ",
+        "not_whitelisted": "Bạn không có trong danh sách trắng của máy chủ này",
+        "server_already_open": "Máy chủ đã mở rồi",
+        "server_already_closed": "Máy chủ đã mở rồi",
+        "no_permission": "Bạn không có quyền cho việc này..",
+        "no_waypoint": "Không có điểm tham chiếu được đặt.",
+        "tp_error": "Lỗi khi dịch chuyển tức thời.",
+        "connecting_database_timeout": "Kết nối với cơ sở dữ liệu đã hết thời gian chờ. (Máy chủ SQL có bật không?)",
+        "connecting_error": "Đã xảy ra lỗi khi kết nối với máy chủ. (Kiểm tra bảng điều khiển máy chủ của bạn)",
+        "no_match_character_registration": "Bất cứ điều gì khác ngoài chữ cái đều không được phép, khoảng trắng ở cuối cũng không được phép và các từ phải bắt đầu bằng chữ in hoa trong các trường nhập. Tuy nhiên, bạn có thể thêm các từ có dấu cách ở giữa.",
+        "already_in_queue": "Bạn đã ở trong hàng đợi.",
+        "no_subqueue": "Bạn không được phép vào bất kỳ hàng đợi phụ nào.",
+        "character_delete_failed": "Xóa ký tự không thành công. Vui lòng thử lại.",
+        "not_optin": "Bạn không được chọn tham gia nhiệm vụ quản trị viên. (/optin để chuyển đổi)"
+    },
+    "success": {
+        "server_opened": "Máy chủ đã được mở",
+        "server_closed": "Máy chủ đã bị đóng",
+        "teleported_waypoint": "Dịch chuyển đến Waypoint.",
+        "character_deleted": "Đã xóa nhân vật!",
+        "character_deleted_citizenid": "Bạn đã xóa thành công ký tự có ID công dân %s.",
+        "optin_set": "Bạn đã chọn thành công %s cho nhiệm vụ quản trị viên."
+    },
+    "info": {
+        "received_paycheck": "Bạn đã nhận được khoản tiền lương $%s",
+        "job_info": "Công việc: %s | Lớp: %s | Nhiệm vụ: %s",
+        "gang_info": "Băng đảng: %s | Lớp: %s",
+        "on_duty": "Bây giờ bạn đang làm nhiệm vụ!",
+        "off_duty": "Bây giờ bạn đã nghỉ việc!",
+        "checking_ban": "Xin chào %s. Chúng tôi đang kiểm tra xem bạn có bị cấm hay không.",
+        "join_server": "Chào mừng %s đến với %s.",
+        "checking_whitelisted": "Xin chào %s. Chúng tôi đang kiểm tra trợ cấp của bạn.",
+        "exploit_banned": "Bạn đã bị cấm vì gian lận. Kiểm tra Discord của chúng tôi để biết thêm thông tin: %s",
+        "exploit_dropped": "Bạn đã bị đá vì lợi dụng",
+        "multichar_title": "Qbox Multichar",
+        "multichar_new_character": "Nhân vật mới #%s",
+        "char_male": "Nam",
+        "char_female": "Nu",
+        "play": "Chơi",
+        "play_description": "Chơi như %s",
+        "delete_character": "Xoa nhan vat",
+        "delete_character_description": "Xóa TẤT CẢ các cảnh %s vĩnh viễn?",
+        "logout_command_help": "Đăng xuất bạn khỏi nhân vật hiện tại của bạn",
+        "check_id": "Kiểm tra ID máy chủ của bạn",
+        "deletechar_command_help": "Xóa nhân vật người chơi",
+        "deletechar_command_arg_player_id": "ID Nguoi Choi",
+        "character_registration_title": "Đăng ký nhân vật",
+        "first_name": "Ten",
+        "last_name": "Ho",
+        "nationality": "Quốc tịch",
+        "gender": "Tình dục",
+        "birth_date": "Ngày sinh",
+        "select_gender": "Chọn giới tính của bạn...",
+        "confirm_delete": "Bạn có chắc chắn muốn xóa ký tự này?",
+        "in_queue": "🐌 Bạn đang xếp hàng %s/%s. (%s) %s",
+        "fetching_user": "Đang tìm nạp người dùng...",
+        "creating_user": "Đang tạo người dùng..."
+    },
+    "command": {
+        "tp": {
+            "help": "TP To Player hoặc Coords (Chỉ dành cho quản trị viên)",
+            "params": {
+                "x": {
+                    "name": "id/x",
+                    "help": "ID của người chơi hoặc vị trí X"
+                },
+                "y": {
+                    "name": "y",
+                    "help": "vị trí Y"
+                },
+                "z": {
+                    "name": "z",
+                    "help": "vị trí Z"
+                }
+            }
+        },
+        "tpm": {
+            "help": "TP To Marker (Chỉ dành cho quản trị viên)"
+        },
+        "togglepvp": {
+            "help": "Chuyển đổi PVP trên máy chủ (Chỉ dành cho quản trị viên)"
+        },
+        "addpermission": {
+            "help": "Cấp quyền cho người chơi (Chỉ có Chúa)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID của người chơi"
+                },
+                "permission": {
+                    "name": "quyền",
+                    "help": "Cấp phép"
+                }
+            }
+        },
+        "removepermission": {
+            "help": "Xóa quyền của người chơi (Chỉ có Chúa)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID của người chơi"
+                },
+                "permission": {
+                    "name": "quyền",
+                    "help": "Cấp phép"
+                }
+            }
+        },
+        "openserver": {
+            "help": "Mở máy chủ cho mọi người (Chỉ dành cho quản trị viên)"
+        },
+        "closeserver": {
+            "help": "Đóng máy chủ đối với những người không có quyền (Chỉ dành cho quản trị viên)",
+            "params": {
+                "reason": {
+                    "name": "lý do",
+                    "help": "Lý do đóng cửa (tùy chọn)"
+                }
+            }
+        },
+        "car": {
+            "help": "Xe sinh sản (Chỉ dành cho quản trị viên)",
+            "params": {
+                "model": {
+                    "name": "mẫu",
+                    "help": "Tên mẫu xe"
+                },
+                "keepCurrentVehicle": {
+                    "name": "keepCurrentVehicle",
+                    "help": "Giữ lại phương tiện bạn đang sử dụng (để trống để xóa phương tiện hiện tại)"
+                }
+            }
+        },
+        "dv": {
+            "help": "Xóa xe (Chỉ quản trị viên)",
+            "params": {
+                "radius": {
+                    "name": "bán kính",
+                    "help": "Bán kính xóa xe trong (mét)"
+                }
+            }
+        },
+        "givemoney": {
+            "help": "Tặng tiền cho người chơi (Chỉ dành cho quản trị viên)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID Nguoi Choi"
+                },
+                "moneytype": {
+                    "name": "moneytype",
+                    "help": "Loại tiền (tiền mặt, ngân hàng, tiền điện tử)"
+                },
+                "amount": {
+                    "name": "số lượng",
+                    "help": "Số tiền"
+                }
+            }
+        },
+        "setmoney": {
+            "help": "Đặt số tiền cho người chơi (Chỉ quản trị viên)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID Nguoi Choi"
+                },
+                "moneytype": {
+                    "name": "moneytype",
+                    "help": "Loại tiền (tiền mặt, ngân hàng, tiền điện tử)"
+                },
+                "amount": {
+                    "name": "số lượng",
+                    "help": "Số tiền"
+                }
+            }
+        },
+        "job": {
+            "help": "Kiểm tra công việc của bạn"
+        },
+        "setjob": {
+            "help": "Đặt công việc cho người chơi (Chỉ dành cho quản trị viên)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID Nguoi Choi"
+                },
+                "job": {
+                    "name": "công việc",
+                    "help": "Lộ trình công việc"
+                },
+                "grade": {
+                    "name": "cấp",
+                    "help": "Cấp bậc công việc"
+                }
+            }
+        },
+        "changejob": {
+            "help": "Thay đổi công việc đang hoạt động của người chơi (Chỉ dành cho quản trị viên)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID Nguoi Choi"
+                },
+                "job": {
+                    "name": "công việc",
+                    "help": "Lộ trình công việc"
+                }
+            }
+        },
+        "addjob": {
+            "help": "Thêm công việc vào người chơi (Chỉ dành cho quản trị viên)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID Nguoi Choi"
+                },
+                "job": {
+                    "name": "công việc",
+                    "help": "Lộ trình công việc"
+                },
+                "grade": {
+                    "name": "cấp",
+                    "help": "Cấp bậc công việc"
+                }
+            }
+        },
+        "removejob": {
+            "help": "Xóa công việc khỏi Trình phát (Chỉ dành cho quản trị viên)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID Nguoi Choi"
+                },
+                "job": {
+                    "name": "công việc",
+                    "help": "Lộ trình công việc"
+                }
+            }
+        },
+        "gang": {
+            "help": "Kiểm tra băng đảng của bạn"
+        },
+        "setgang": {
+            "help": "Đặt nhóm người chơi (Chỉ dành cho quản trị viên)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID Nguoi Choi"
+                },
+                "gang": {
+                    "name": "băng nhóm",
+                    "help": "Tên băng nhóm"
+                },
+                "grade": {
+                    "name": "cấp",
+                    "help": "Cấp băng đảng"
+                }
+            }
+        },
+        "ooc": {
+            "help": "Tin nhắn trò chuyện OOC"
+        },
+        "me": {
+            "help": "Hiển thị tin nhắn địa phương",
+            "params": {
+                "message": {
+                    "name": "tin nhắn",
+                    "help": "Tin nhắn để gửi"
+                }
+            }
+        },
+        "optin": {
+            "help": "Chuyển đổi chọn tham gia nhiệm vụ quản trị viên (Chỉ dành cho quản trị viên)"
+        }
+    }
+}

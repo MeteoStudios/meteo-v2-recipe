@@ -1,0 +1,395 @@
+/* ==========================================================================
+   Radial Menu - ring of rounded segments
+   Solid shapes, one easing curve, three durations. No blur, no gradients.
+   ========================================================================== */
+
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+:root {
+    /* Position of the menu centre on screen (unchanged from the old menu) */
+    --rm-x: 70%;
+    --rm-y: 45%;
+
+    /* Colour */
+    --rm-seg: #16171E;                       /* segment body (surface-card)   */
+    --rm-hub: #0C0D12;                       /* hub body (ink-900)            */
+    --rm-line: rgba(255, 255, 255, 0.11);    /* hub border (line-strong)      */
+    --rm-white: #F5F9FC;                     /* icons, text (text-hi)         */
+    --rm-green: #57EFAF;                     /* app-accent                    */
+    --rm-accent: #203734;                    /* active fill, 15% green tint   */
+    --rm-ink: var(--rm-green);               /* icon/text on active fill      */
+    --rm-dim: rgba(245, 249, 252, 0.50);     /* idle hub icon (text-lo)       */
+    --rm-empty-opacity: 0.42;                /* filler segments               */
+
+    /* Motion */
+    --rm-t-fast: 120ms;
+    --rm-t-norm: 250ms;
+    --rm-e: cubic-bezier(0.2, 0.8, 0.2, 1);
+    --rm-stagger: 14ms;
+
+    /* Type */
+    --rm-font: "Plus Jakarta Sans", system-ui, sans-serif;
+    --rm-font-display: "Clash Display", "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: transparent;
+    font-family: var(--rm-font);
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#radial-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+body.rm-can-click {
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------
+   Root — 500 x 500 design box. --rm-scale is set from JS (screen height).
+   -------------------------------------------------------------------------- */
+.radial-menu {
+    position: absolute;
+    top: var(--rm-y);
+    left: var(--rm-x);
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%) scale(var(--rm-scale, 1));
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--rm-t-fast) var(--rm-e), visibility 0s linear var(--rm-t-fast);
+}
+
+.radial-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity var(--rm-t-fast) var(--rm-e);
+}
+
+.rm-stage {
+    position: absolute;
+    inset: 0;
+    transform: scale(0.96);
+    transition: transform var(--rm-t-norm) var(--rm-e);
+}
+
+.radial-menu.is-open .rm-stage {
+    transform: none;
+}
+
+/* --------------------------------------------------------------------------
+   Ring (segments + icons). Swapped as one unit when changing menu level.
+   -------------------------------------------------------------------------- */
+.rm-ring {
+    position: absolute;
+    inset: 0;
+}
+
+.rm-ring.is-leaving {
+    opacity: 0;
+    transition: opacity var(--rm-t-fast) var(--rm-e), transform var(--rm-t-fast) var(--rm-e);
+}
+
+.radial-menu[data-dir="in"] .rm-ring.is-leaving  { transform: scale(1.06); }
+.radial-menu[data-dir="out"] .rm-ring.is-leaving { transform: scale(0.94); }
+
+.rm-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+/* Segment ---------------------------------------------------------------- */
+.rm-seg {
+    transform-origin: 250px 250px;
+    transition: transform var(--rm-t-fast) var(--rm-e);
+    animation: rm-seg-in var(--rm-t-norm) var(--rm-e) backwards;
+    animation-delay: calc(var(--i) * var(--rm-stagger));
+}
+
+.radial-menu[data-dir="out"] .rm-seg {
+    animation-name: rm-seg-in-back;
+}
+
+.rm-seg-shape {
+    fill: var(--rm-seg);
+    stroke: var(--rm-seg);
+    stroke-linejoin: round;
+    transition: fill var(--rm-t-fast) var(--rm-e), stroke var(--rm-t-fast) var(--rm-e);
+}
+
+.rm-seg-more {
+    fill: var(--rm-white);
+    stroke: var(--rm-white);
+    stroke-width: 2;
+    stroke-linejoin: round;
+    opacity: 0.42;
+    transition: fill var(--rm-t-fast) var(--rm-e), stroke var(--rm-t-fast) var(--rm-e);
+}
+
+.rm-seg.is-empty {
+    opacity: var(--rm-empty-opacity);
+}
+
+.rm-seg.is-active {
+    transform: translate(var(--px), var(--py));
+}
+
+.rm-seg.is-active .rm-seg-shape {
+    fill: var(--rm-accent);
+    stroke: var(--rm-accent);
+}
+
+.rm-seg.is-active .rm-seg-more {
+    fill: var(--rm-ink);
+    stroke: var(--rm-ink);
+}
+
+.rm-seg.is-pressed {
+    transform: translate(calc(var(--px) * 0.35), calc(var(--py) * 0.35));
+}
+
+/* Icon ------------------------------------------------------------------- */
+.rm-icon {
+    position: absolute;
+    width: var(--s);
+    height: var(--s);
+    margin: calc(var(--s) / -2) 0 0 calc(var(--s) / -2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rm-white);
+    transition: transform var(--rm-t-fast) var(--rm-e), color var(--rm-t-fast) var(--rm-e);
+    animation: rm-icon-in var(--rm-t-norm) var(--rm-e) backwards;
+    animation-delay: calc(var(--i) * var(--rm-stagger));
+}
+
+.radial-menu[data-dir="out"] .rm-icon {
+    animation-name: rm-icon-in-back;
+}
+
+.rm-icon i {
+    font-family: "Material Icons Round", "Material Icons";
+    font-size: var(--s);
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    display: block;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+}
+
+.rm-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+.rm-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.rm-icon.is-active {
+    color: var(--rm-ink);
+    transform: translate(var(--px), var(--py));
+}
+
+.rm-icon.is-pressed {
+    transform: translate(calc(var(--px) * 0.35), calc(var(--py) * 0.35));
+}
+
+/* Direction needle ------------------------------------------------------ */
+.rm-needle {
+    transform-origin: 250px 250px;
+    opacity: 0;
+    transition: opacity var(--rm-t-fast) var(--rm-e);
+}
+
+.rm-needle path {
+    fill: none;
+    stroke: var(--rm-green);
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+.rm-needle.is-visible {
+    opacity: 1;
+}
+
+/* Hub -------------------------------------------------------------------- */
+.rm-hub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--hub, 200px);
+    height: var(--hub, 200px);
+    margin: calc(var(--hub, 200px) / -2) 0 0 calc(var(--hub, 200px) / -2);
+    border-radius: 50%;
+    background: var(--rm-hub);
+    border: 1px solid var(--rm-line);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    color: var(--rm-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--rm-t-fast) var(--rm-e), color var(--rm-t-fast) var(--rm-e),
+        transform var(--rm-t-fast) var(--rm-e);
+    animation: rm-hub-in var(--rm-t-norm) var(--rm-e) backwards;
+}
+
+.rm-hub.is-active {
+    background: var(--rm-accent);
+    border-color: transparent;
+    color: var(--rm-ink);
+    transform: scale(1.03);
+}
+
+.rm-hub.is-pressed {
+    transform: scale(0.98);
+}
+
+/* Incoming content fades in; outgoing content cuts, so the two never overlap. */
+.rm-hub-icon,
+.rm-hub-label {
+    position: absolute;
+}
+
+.rm-hub-icon {
+    width: 26px;
+    height: 26px;
+    color: var(--rm-dim);
+    transition: opacity var(--rm-t-fast) var(--rm-e), transform var(--rm-t-fast) var(--rm-e),
+        color var(--rm-t-fast) var(--rm-e);
+}
+
+.radial-menu.has-label .rm-hub-icon {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: none;
+}
+
+.rm-hub-icon svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: opacity var(--rm-t-fast) var(--rm-e), transform var(--rm-t-norm) var(--rm-e);
+}
+
+/* close <-> back swap */
+.rm-hub-icon .rm-ico-back               { opacity: 0; transform: translateX(6px); }
+.radial-menu.is-sub .rm-ico-back        { opacity: 1; transform: none; }
+.radial-menu.is-sub .rm-ico-close       { opacity: 0; transform: scale(0.6); }
+
+.rm-hub.is-active .rm-hub-icon {
+    color: var(--rm-ink);
+}
+
+.rm-hub-label {
+    max-width: 142px;
+    font-family: var(--rm-font-display);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    text-align: center;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+    opacity: 0;
+    transform: translateY(3px);
+}
+
+.radial-menu.has-label .rm-hub-label {
+    opacity: 1;
+    transform: none;
+    transition: opacity var(--rm-t-fast) var(--rm-e), transform var(--rm-t-fast) var(--rm-e);
+}
+
+/* --------------------------------------------------------------------------
+   Keyframes - "from" only, so they settle into whatever the live state is.
+   -------------------------------------------------------------------------- */
+@keyframes rm-seg-in {
+    from { opacity: 0; transform: scale(0.86); }
+}
+
+@keyframes rm-seg-in-back {
+    from { opacity: 0; transform: scale(1.1); }
+}
+
+@keyframes rm-icon-in {
+    from {
+        opacity: 0;
+        transform: translate(calc(var(--vx) * -0.14px), calc(var(--vy) * -0.14px)) scale(0.86);
+    }
+}
+
+@keyframes rm-icon-in-back {
+    from {
+        opacity: 0;
+        transform: translate(calc(var(--vx) * 0.1px), calc(var(--vy) * 0.1px)) scale(1.1);
+    }
+}
+
+@keyframes rm-hub-in {
+    from { opacity: 0; transform: scale(0.84); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .rm-stage,
+    .rm-seg,
+    .rm-icon,
+    .rm-hub,
+    .rm-hub-icon,
+    .rm-hub-icon svg,
+    .rm-hub-label,
+    .rm-ring.is-leaving {
+        animation: none !important;
+        transition-duration: 1ms !important;
+    }
+
+    .rm-stage,
+    .rm-seg.is-active,
+    .rm-icon.is-active,
+    .rm-hub.is-active,
+    .rm-ring.is-leaving {
+        transform: none !important;
+    }
+}

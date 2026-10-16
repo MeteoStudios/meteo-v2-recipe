@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Podnieś windę",
+    "target_lift_lower": "Niższy podnośnik",
+    "target_door_unlock": "Odblokuj drzwi",
+    "target_door_lock": "Zablokuj drzwi",
+    "notify_no_access": "Nie masz do tego dostępu",
+    "notify_busy": "Poczekaj, aż przestanie się poruszać",
+    "notify_locked": "Drzwi zamknięte",
+    "notify_unlocked": "Drzwi odblokowane"
+}

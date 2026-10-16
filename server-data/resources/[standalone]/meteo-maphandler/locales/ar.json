@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "رفع الرفع",
+    "target_lift_lower": "رفع أقل",
+    "target_door_unlock": "فتح الباب",
+    "target_door_lock": "قفل الباب",
+    "notify_no_access": "ليس لديك حق الوصول إلى هذا",
+    "notify_busy": "انتظر حتى يتوقف عن الحركة",
+    "notify_locked": "الباب مغلق",
+    "notify_unlocked": "تم فتح الباب"
+}

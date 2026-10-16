@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Tylko dla policjantow"
+  },
+  "afk": {
+    "will_kick": "Jestes AFK i zostaniesz wyrzucony za",
+    "time_seconds": "sekund!",
+    "time_minutes": "minuta(y)!",
+    "kick_message": "Zostales wyrzucony za AFK"
+  },
+  "wash": {
+    "in_progress": "Pojazd jest mytty...",
+    "wash_vehicle": "Umyj pojazd",
+    "wash_vehicle_target": "Umyj pojazd",
+    "dirty": "Pojazd nie jest brudny",
+    "cancel": "Mycie anulowano...",
+    "no_money": "Nie masz wystarczajaco pieniedzy"
+  },
+  "consumables": {
+    "eat_progress": "Jedzenie...",
+    "drink_progress": "Picie...",
+    "liqour_progress": "Picie alkoholu...",
+    "coke_progress": "Szybkie wciagniecie...",
+    "crack_progress": "Palenie crack'u...",
+    "ecstasy_progress": "Biorenie pigulki",
+    "healing_progress": "Uzdrowianie",
+    "meth_progress": "Palenie mety",
+    "joint_progress": "Zapalanie skrota...",
+    "use_parachute_progress": "Zalozenie spadochronu...",
+    "pack_parachute_progress": "Pakowanie spadochronu...",
+    "no_parachute": "Nie masz spadochronu!",
+    "armor_full": "Masz juz wystarczajaco pancerza!",
+    "armor_empty": "Nie nosisz kamizelki...",
+    "armor_progress": "Zalozenie pancerza...",
+    "heavy_armor_progress": "Zalozenie ciezkiego pancerza...",
+    "remove_armor_progress": "Zdejmowanie pancerza...",
+    "canceled": "Anulowano..."
+  },
+  "cruise": {
+    "unavailable": "Tempomat niedostepny",
+    "activated": "Tempomat aktywowany",
+    "deactivated": "Tempomat deaktywowany"
+  },
+  "editor": {
+    "started": "Nagrywanie rozpoczete!",
+    "save": "Nagrywanie zapisane!",
+    "delete": "Nagrywanie usuniete!",
+    "editor": "Do zobaczenia!"
+  },
+  "firework": {
+    "place_progress": "Umieszczanie fajerwerku...",
+    "canceled": "Anulowano...",
+    "time_left": "Wystrzelenie fajerwerku za ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Zalozenie pasa wyscigowego",
+    "remove_harness_progress": "Zdjecie pasa wyscigowego",
+    "no_car": "Nie jestes w samochodzie.",
+    "harness_on": "Nie mozesz zmieniac pasa bezpieczenstwa podczas zalozenia pasa wyscigowego",
+    "harness_broken": "Twoj pas wyscigowy pekl!"
+  },
+  "teleport": {
+    "teleport_default": "Uzyj windy"
+  },
+  "pushcar": {
+    "stop_push": "[E] Przestan pchas"
+  }
+}

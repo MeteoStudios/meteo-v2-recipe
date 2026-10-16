@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Lever l'ascenseur",
+    "target_lift_lower": "Ascenseur inférieur",
+    "target_door_unlock": "Déverrouiller la porte",
+    "target_door_lock": "Verrouiller la porte",
+    "notify_no_access": "Vous n'y avez pas accès",
+    "notify_busy": "Attends qu'il arrête de bouger",
+    "notify_locked": "Porte verrouillée",
+    "notify_unlocked": "Porte déverrouillée"
+}

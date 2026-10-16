@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Höj hissen",
+    "target_lift_lower": "Sänklyft",
+    "target_door_unlock": "Lås upp dörren",
+    "target_door_lock": "Lås dörren",
+    "notify_no_access": "Du har inte tillgång till detta",
+    "notify_busy": "Vänta tills den slutar röra sig",
+    "notify_locked": "Dörren låst",
+    "notify_unlocked": "Dorr oplast"
+}

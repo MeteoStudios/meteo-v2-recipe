@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "levantar levantar",
+    "target_lift_lower": "elevación inferior",
+    "target_door_unlock": "desbloquear la puerta",
+    "target_door_lock": "cerrar la puerta",
+    "notify_no_access": "No tienes acceso a esto",
+    "notify_busy": "Espera a que deje de moverse",
+    "notify_locked": "puerta cerrada",
+    "notify_unlocked": "Puerta desbloqueada"
+}

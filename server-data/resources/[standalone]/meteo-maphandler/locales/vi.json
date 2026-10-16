@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Nâng thang máy",
+    "target_lift_lower": "Hạ thang máy",
+    "target_door_unlock": "Mở khóa cửa",
+    "target_door_lock": "Khóa cửa",
+    "notify_no_access": "Bạn không có quyền truy cập vào cái này",
+    "notify_busy": "Đợi nó ngừng chuyển động",
+    "notify_locked": "Cửa bị khóa",
+    "notify_unlocked": "Cửa được mở khóa"
+}

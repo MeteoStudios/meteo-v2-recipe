@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Podignite dizalo",
+    "target_lift_lower": "Donji lift",
+    "target_door_unlock": "Otključaj vrata",
+    "target_door_lock": "Zaključaj vrata",
+    "notify_no_access": "Nemate pristup ovome",
+    "notify_busy": "Pričekajte da se prestane pomicati",
+    "notify_locked": "Vrata zaključana",
+    "notify_unlocked": "Vrata otključana"
+}

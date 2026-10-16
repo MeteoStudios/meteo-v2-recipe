@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Réservé aux Officiers de Police"
+  },
+  "afk": {
+    "will_kick": "Tu es AFK et seras expulsé dans",
+    "time_seconds": "secondes!",
+    "time_minutes": "minutes)!",
+    "kick_message": "Tu as été expulsé pour être AFK"
+  },
+  "wash": {
+    "in_progress": "Le vehicule est en cours de nettoyage...",
+    "wash_vehicle": "Nettoyer le Vehicule",
+    "wash_vehicle_target": "Nettoyer le Vehicule",
+    "dirty": "Le vehicule n'est pas sale",
+    "cancel": "Nettoyage annulé...",
+    "no_money": "Tu n'as pas assez d'argent"
+  },
+  "consumables": {
+    "eat_progress": "Manger...",
+    "drink_progress": "Boire...",
+    "liqour_progress": "Boire de l'alcool...",
+    "coke_progress": "Rapide reniflage...",
+    "crack_progress": "Fumer du crack...",
+    "ecstasy_progress": "Prendre des pilules",
+    "healing_progress": "Guerison",
+    "meth_progress": "Fumer de la meth",
+    "joint_progress": "Allumer un joint...",
+    "use_parachute_progress": "Enfiler le parachute...",
+    "pack_parachute_progress": "Plier le parachute...",
+    "no_parachute": "Tu n'as pas de parachute!",
+    "armor_full": "Tu as deja assez d'armure!",
+    "armor_empty": "Tu ne portes pas de gilet...",
+    "armor_progress": "Enfiler l'armure...",
+    "heavy_armor_progress": "Enfiler l'armure lourde...",
+    "remove_armor_progress": "Enlever l'armure...",
+    "canceled": "Annulé..."
+  },
+  "cruise": {
+    "unavailable": "Controle de vitesse indisponible",
+    "activated": "Controle de vitesse activé",
+    "deactivated": "Controle de vitesse désactivé"
+  },
+  "editor": {
+    "started": "Enregistrement démarré!",
+    "save": "Enregistrement sauvegardé!",
+    "delete": "Enregistrement supprimé!",
+    "editor": "A plus tard!"
+  },
+  "firework": {
+    "place_progress": "Placement des feux d'artifice...",
+    "canceled": "Annulé...",
+    "time_left": "Lancement des feux d'artifice dans ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Attacher le harnais de course",
+    "remove_harness_progress": "Retirer le harnais de course",
+    "no_car": "Tu n'es pas dans une voiture.",
+    "harness_on": "Impossible de basculer la ceinture pendant que le harnais est equipe",
+    "harness_broken": "Ton harnais de course s'est cassé!"
+  },
+  "teleport": {
+    "teleport_default": "Utilise l'Ascenseur"
+  },
+  "pushcar": {
+    "stop_push": "[E] Arreter de Pousser"
+  }
+}

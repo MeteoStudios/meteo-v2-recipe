@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Ainult Politseinikele"
+  },
+  "afk": {
+    "will_kick": "Oled AFK ja sind visatakse välja",
+    "time_seconds": "sekundites!",
+    "time_minutes": "minut(it)!",
+    "kick_message": "Sind visati välja AFK'is olemine"
+  },
+  "wash": {
+    "in_progress": "Autot pesustatakse...",
+    "wash_vehicle": "Uto Pesa",
+    "wash_vehicle_target": "Auto Pesa",
+    "dirty": "Auto pole määrdunud",
+    "cancel": "Pesamine tühistati...",
+    "no_money": "Sul pole piisavalt raha"
+  },
+  "consumables": {
+    "eat_progress": "Söömist...",
+    "drink_progress": "Joomist...",
+    "liqour_progress": "Alkoholi joomist...",
+    "coke_progress": "Kiire nuuskamine...",
+    "crack_progress": "Crackide tubakasuitsmist...",
+    "ecstasy_progress": "Tablettide võtmine",
+    "healing_progress": "Paranemist",
+    "meth_progress": "Metaamfetamiini suitsmist",
+    "joint_progress": "Ühise süütamine...",
+    "use_parachute_progress": "Langevarje panemist...",
+    "pack_parachute_progress": "Langevarje pakkimist...",
+    "no_parachute": "Sul pole langevarjut!",
+    "armor_full": "Sul on juba piisavalt riistakut!",
+    "armor_empty": "Sa ei kanna vesti...",
+    "armor_progress": "Riistakut panemist...",
+    "heavy_armor_progress": "Raske riistakut panemist...",
+    "remove_armor_progress": "Riistakut võtmist...",
+    "canceled": "Tühistati..."
+  },
+  "cruise": {
+    "unavailable": "Kruvikontrool pole saadaval",
+    "activated": "Kruvikontrool aktiveeritud",
+    "deactivated": "Kruvikontrool deaktiveeritud"
+  },
+  "editor": {
+    "started": "Salvestamine alustatud!",
+    "save": "Salvestamine salvestatud!",
+    "delete": "Salvestamine kustutatud!",
+    "editor": "Nägemiseni!"
+  },
+  "firework": {
+    "place_progress": "Ilutulestikke paigutatakse...",
+    "canceled": "Tühistati...",
+    "time_left": "Ilutulestikud ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Rennireie kinnitamine",
+    "remove_harness_progress": "Rennireie eemaldamine",
+    "no_car": "Sa pole autos.",
+    "harness_on": "Te ei saa juhtmest vahetada, kui rennihari on pandud",
+    "harness_broken": "Teie rennihari on katki!"
+  },
+  "teleport": {
+    "teleport_default": "Kasuta Lifti"
+  },
+  "pushcar": {
+    "stop_push": "[E] Lakkamine"
+  }
+}

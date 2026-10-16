@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Asansörü yükseltin",
+    "target_lift_lower": "Alt kaldırma",
+    "target_door_unlock": "Kapının kilidini aç",
+    "target_door_lock": "Kapıyı kilitle",
+    "notify_no_access": "Buna erişiminiz yok",
+    "notify_busy": "Hareket etmeyi bırakmasını bekleyin",
+    "notify_locked": "Kapı kilitli",
+    "notify_unlocked": "Kapı kilidi açıldı"
+}

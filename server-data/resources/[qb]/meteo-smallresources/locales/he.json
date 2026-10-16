@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "רק לשוטרים"
+  },
+  "afk": {
+    "will_kick": "אתה AFK וייבעט בעוד",
+    "time_seconds": "שניות!",
+    "time_minutes": "דקה(ות)!",
+    "kick_message": "יצאת לבעיה AFK"
+  },
+  "wash": {
+    "in_progress": "הרכב מתרחץ...",
+    "wash_vehicle": "שטוף רכב",
+    "wash_vehicle_target": "שטוף רכב",
+    "dirty": "הרכב אינו מלוכלך",
+    "cancel": "שטיפה בוטלה...",
+    "no_money": "אין לך מספיק כסף"
+  },
+  "consumables": {
+    "eat_progress": "אכילה...",
+    "drink_progress": "שתיה...",
+    "liqour_progress": "שתיית אלכוהול...",
+    "coke_progress": "שנוף מהיר...",
+    "crack_progress": "עישון סדק...",
+    "ecstasy_progress": "בליעת כדורים",
+    "healing_progress": "ריפוי",
+    "meth_progress": "עישון מט",
+    "joint_progress": "הדלקת מפרק...",
+    "use_parachute_progress": "ישיבת מצנחת...",
+    "pack_parachute_progress": "אריזת מצנחת...",
+    "no_parachute": "אין לך מצנחת!",
+    "armor_full": "כבר יש לך מספיק שריון!",
+    "armor_empty": "אתה לא לובש אפוד...",
+    "armor_progress": "ישיבת השריון...",
+    "heavy_armor_progress": "ישיבת שריון כבד...",
+    "remove_armor_progress": "הסרת השריון...",
+    "canceled": "בוטל..."
+  },
+  "cruise": {
+    "unavailable": "בקרת שייט אינה זמינה",
+    "activated": "בקרת שייט מופעלת",
+    "deactivated": "בקרת שייט מבוטלת"
+  },
+  "editor": {
+    "started": "ההקלטה החלה!",
+    "save": "ההקלטה נשמרה!",
+    "delete": "ההקלטה נמחקה!",
+    "editor": "להתראות!"
+  },
+  "firework": {
+    "place_progress": "הצבת זיקויות...",
+    "canceled": "בוטל...",
+    "time_left": "שיגור זיקויות ב ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "קשירת רתועת מירוץ",
+    "remove_harness_progress": "הסרת רתועת מירוץ",
+    "no_car": "אתה לא במכונית.",
+    "harness_on": "לא יכול להחליף חגורת בטיחות בזמן שהרתועה מרותקת",
+    "harness_broken": "הרתועה שלך שברה!"
+  },
+  "teleport": {
+    "teleport_default": "השתמש במעלית"
+  },
+  "pushcar": {
+    "stop_push": "[E] הפסק דחיפה"
+  }
+}

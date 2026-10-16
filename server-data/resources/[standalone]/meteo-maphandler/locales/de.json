@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Hebebühne anheben",
+    "target_lift_lower": "Senken Sie den Lift",
+    "target_door_unlock": "Tür entriegeln",
+    "target_door_lock": "Tür verriegeln",
+    "notify_no_access": "Sie haben keinen Zugriff darauf",
+    "notify_busy": "Warten Sie, bis es aufhört, sich zu bewegen",
+    "notify_locked": "Tür verschlossen",
+    "notify_unlocked": "Tür entsperrt"
+}

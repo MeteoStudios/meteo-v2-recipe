@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Endast for polisbefal"
+  },
+  "afk": {
+    "will_kick": "Du ar AFK och kommer att sparkas om",
+    "time_seconds": "sekunder!",
+    "time_minutes": "minut(er)!",
+    "kick_message": "Du sparkades for att vara AFK"
+  },
+  "wash": {
+    "in_progress": "Fordonet tvättas...",
+    "wash_vehicle": "Tvätta fordon",
+    "wash_vehicle_target": "Tvätta fordon",
+    "dirty": "Fordonet ar inte smutsigt",
+    "cancel": "Tvättning avbruten...",
+    "no_money": "Du har inte tillräckligt med pengar"
+  },
+  "consumables": {
+    "eat_progress": "Äter...",
+    "drink_progress": "Dricka...",
+    "liqour_progress": "Dricka sprit...",
+    "coke_progress": "Snabbt sniffa...",
+    "crack_progress": "Röka crack...",
+    "ecstasy_progress": "Ta piller",
+    "healing_progress": "Läkning",
+    "meth_progress": "Röka meth",
+    "joint_progress": "Tanda joint...",
+    "use_parachute_progress": "Lägga på fallskärm...",
+    "pack_parachute_progress": "Packa fallskärm...",
+    "no_parachute": "Du har ingen fallskärm!",
+    "armor_full": "Du har redan tillräckligt med rustning!",
+    "armor_empty": "Du bär ingen väst...",
+    "armor_progress": "Lägga på rustning...",
+    "heavy_armor_progress": "Lägga på tung rustning...",
+    "remove_armor_progress": "Ta av rustning...",
+    "canceled": "Avbrutet..."
+  },
+  "cruise": {
+    "unavailable": "Farthållare otillgänglig",
+    "activated": "Farthållare aktiverad",
+    "deactivated": "Farthållare inaktiverad"
+  },
+  "editor": {
+    "started": "Inspelningen startad!",
+    "save": "Inspelningen sparad!",
+    "delete": "Inspelningen borttagen!",
+    "editor": "Se dig senare!"
+  },
+  "firework": {
+    "place_progress": "Placera fyrverkerier...",
+    "canceled": "Avbrutet...",
+    "time_left": "Fyrverkerier lanseras om ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Fästa racingkåre",
+    "remove_harness_progress": "Ta av racingkåre",
+    "no_car": "Du är inte i en bil.",
+    "harness_on": "Kan inte byta säkerhetsbälte när racingkåren är på",
+    "harness_broken": "Din racingkåre har brustit!"
+  },
+  "teleport": {
+    "teleport_default": "Använd Hissen"
+  },
+  "pushcar": {
+    "stop_push": "[E] Sluta Skjuta"
+  }
+}

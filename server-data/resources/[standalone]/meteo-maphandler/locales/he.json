@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "הרם את הרמה",
+    "target_lift_lower": "מעלית נמוכה יותר",
+    "target_door_unlock": "פתח את הדלת",
+    "target_door_lock": "נעל את הדלת",
+    "notify_no_access": "אין לך גישה לזה",
+    "notify_busy": "חכה שזה יפסיק לזוז",
+    "notify_locked": "דלת נעולה",
+    "notify_unlocked": "דלת נפתחה"
+}

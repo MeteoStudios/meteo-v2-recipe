@@ -1,0 +1,288 @@
+{
+    "error": {
+        "not_online": "Oyuncu çevrimiçi değil",
+        "wrong_format": "Yanlış format",
+        "missing_args": "Tüm argümanlar girilmedi (x, y, z)",
+        "missing_args2": "Tüm argümanlar doldurulmalı!",
+        "no_access": "Bu komuta erişim yok",
+        "company_too_poor": "İşvereniniz iflas etmiş",
+        "item_not_exist": "Eşya mevcut değil",
+        "too_heavy": "Envanter çok dolu",
+        "location_not_exist": "Konum mevcut değil",
+        "duplicate_license": "Aynı Rockstar Lisansı Bulundu",
+        "no_valid_license": "Geçerli Rockstar Lisansı Bulunamadı",
+        "not_whitelisted": "Bu sunucu için beyaz listeye alınmadınız",
+        "server_already_open": "Sunucu zaten açık",
+        "server_already_closed": "Sunucu zaten kapalı",
+        "no_permission": "Bu işlem için yetkiniz yok",
+        "no_waypoint": "Yol noktası ayarlanmadı.",
+        "tp_error": "Işınlanırken hata oluştu.",
+        "connecting_database_timeout": "Veritabanına bağlanma zaman aşımına uğradı. (SQL sunucusu açık mı?)",
+        "connecting_error": "Sunucuya bağlanırken hata oluştu. (Sunucu konsolunuzu kontrol edin)",
+        "no_match_character_registration": "Kayıt alanlarında harfler dışındaki karakterler kabul edilmez, boşluklar kabul edilmez ve kelimeler büyük harfle başlamalıdır. Ancak kelimeler arasında boşluk bırakabilirsiniz.",
+        "already_in_queue": "Zaten sıradasınız.",
+        "no_subqueue": "Herhangi bir alt sıraya alınmadınız.",
+        "character_delete_failed": "Karakter silme işlemi başarısız oldu. Lütfen tekrar deneyin.",
+        "not_optin": "Yönetici görevine seçilmediniz. (/geçiş yapmayı seç)"
+    },
+    "success": {
+        "server_opened": "Sunucu açıldı",
+        "server_closed": "Sunucu kapatıldı",
+        "teleported_waypoint": "Yol noktasına ışınlandınız.",
+        "character_deleted": "Karakter silindi!",
+        "character_deleted_citizenid": "Citizen ID %s olan karakter başarıyla silindi.",
+        "optin_set": "%s'yu yönetici görevi için başarıyla seçtiniz."
+    },
+    "info": {
+        "received_paycheck": "$%s maaşınızı aldınız",
+        "job_info": "İş: %s | Seviye: %s | Görevde: %s",
+        "gang_info": "Çete: %s | Seviye: %s",
+        "on_duty": "Görevdeyseniz!",
+        "off_duty": "Görev dışındasınız!",
+        "checking_ban": "Merhaba %s. Yasaklı olup olmadığınızı kontrol ediyoruz.",
+        "join_server": "%s, %s sunucusuna hoş geldiniz.",
+        "checking_whitelisted": "Merhaba %s. İzninizi kontrol ediyoruz.",
+        "exploit_banned": "Hile yaptığınız için yasaklandınız. Daha fazla bilgi için Discord'umuza bakın: %s",
+        "exploit_dropped": "Hile yaptığınız için atıldınız",
+        "multichar_title": "Qbox Çoklu Karakter",
+        "multichar_new_character": "Yeni Karakter #%s",
+        "char_male": "Erkek",
+        "char_female": "Kadın",
+        "play": "Oyna",
+        "play_description": "%s olarak oyna",
+        "delete_character": "Karakteri Sil",
+        "delete_character_description": "%s karakterini sil",
+        "logout_command_help": "Mevcut karakterinizden çıkış yapar",
+        "check_id": "Sunucu Kimliğinizi Kontrol Edin",
+        "deletechar_command_help": "Bir oyuncunun karakterini siler",
+        "deletechar_command_arg_player_id": "Oyuncu ID",
+        "character_registration_title": "Karakter Kaydı",
+        "first_name": "Ad",
+        "last_name": "Soyad",
+        "nationality": "Milliyet",
+        "gender": "Cinsiyet",
+        "birth_date": "Doğum Tarihi",
+        "select_gender": "Cinsiyetinizi seçin...",
+        "confirm_delete": "Bu karakteri silmek istediğinizden emin misiniz?",
+        "in_queue": "🐌 Sıradasınız %s/%s. (%s) %s",
+        "fetching_user": "Kullanıcı getiriliyor...",
+        "creating_user": "Kullanıcı oluşturuluyor..."
+    },
+    "command": {
+        "tp": {
+            "help": "Oyuncuya veya Koordinatlara Işınlan (Yönetici Sadece)",
+            "params": {
+                "x": {
+                    "name": "kimlik/x",
+                    "help": "Oyuncu ID'si veya X pozisyonu"
+                },
+                "y": {
+                    "name": "y",
+                    "help": "Y pozisyonu"
+                },
+                "z": {
+                    "name": "z",
+                    "help": "Z pozisyonu"
+                }
+            }
+        },
+        "tpm": {
+            "help": "İşaretleyiciye Işınlan (Yönetici Sadece)"
+        },
+        "togglepvp": {
+            "help": "Sunucuda PvP'yi Aç/Kapat (Yönetici Sadece)"
+        },
+        "addpermission": {
+            "help": "Oyuncuya Yetki Ver (Yönetici Sadece)",
+            "params": {
+                "id": {
+                    "name": "İD",
+                    "help": "Oyuncu ID'si"
+                },
+                "permission": {
+                    "name": "izin",
+                    "help": "Yetki seviyesi"
+                }
+            }
+        },
+        "removepermission": {
+            "help": "Oyuncunun Yetkisini Kaldır (Yönetici Sadece)",
+            "params": {
+                "id": {
+                    "name": "İD",
+                    "help": "Oyuncu ID'si"
+                },
+                "permission": {
+                    "name": "izin",
+                    "help": "Yetki seviyesi"
+                }
+            }
+        },
+        "openserver": {
+            "help": "Sunucuyu Herkese Aç (Yönetici Sadece)"
+        },
+        "closeserver": {
+            "help": "Yetkisi Olmayanlar İçin Sunucuyu Kapat (Yönetici Sadece)",
+            "params": {
+                "reason": {
+                    "name": "sebep",
+                    "help": "Kapatma nedeni (isteğe bağlı)"
+                }
+            }
+        },
+        "car": {
+            "help": "Araç Spawn Et (Yönetici Sadece)",
+            "params": {
+                "model": {
+                    "name": "modeli",
+                    "help": "Araç model adı"
+                },
+                "keepCurrentVehicle": {
+                    "name": "KeepMevcutAraç",
+                    "help": "Şu anda bulunduğunuz aracı koruyun (mevcut aracı silmek için boş bırakın)"
+                }
+            }
+        },
+        "dv": {
+            "help": "Araç Sil (Yönetici Sadece)",
+            "params": {
+                "radius": {
+                    "name": "yarıçap",
+                    "help": "Araçların silineceği yarıçap (metre)"
+                }
+            }
+        },
+        "givemoney": {
+            "help": "Bir Oyuncuya Para Ver (Yönetici Sadece)",
+            "params": {
+                "id": {
+                    "name": "İD",
+                    "help": "Oyuncu ID'si"
+                },
+                "moneytype": {
+                    "name": "para türü",
+                    "help": "Para türü (nakit, banka, kripto)"
+                },
+                "amount": {
+                    "name": "miktar",
+                    "help": "Para miktarı"
+                }
+            }
+        },
+        "setmoney": {
+            "help": "Bir Oyuncunun Para Miktarını Ayarla (Yönetici Sadece)",
+            "params": {
+                "id": {
+                    "name": "İD",
+                    "help": "Oyuncu ID'si"
+                },
+                "moneytype": {
+                    "name": "para türü",
+                    "help": "Para türü (nakit, banka, kripto)"
+                },
+                "amount": {
+                    "name": "miktar",
+                    "help": "Para miktarı"
+                }
+            }
+        },
+        "job": {
+            "help": "İşinizi Kontrol Edin"
+        },
+        "setjob": {
+            "help": "Bir Oyuncunun İşini Ayarla (Yönetici Sadece)",
+            "params": {
+                "id": {
+                    "name": "İD",
+                    "help": "Oyuncu ID'si"
+                },
+                "job": {
+                    "name": "iş",
+                    "help": "İş adı"
+                },
+                "grade": {
+                    "name": "seviye",
+                    "help": "İş seviyesi"
+                }
+            }
+        },
+        "changejob": {
+            "help": "Bir Oyuncunun Aktif İşini Değiştir (Yönetici Sadece)",
+            "params": {
+                "id": {
+                    "name": "İD",
+                    "help": "Oyuncu ID'si"
+                },
+                "job": {
+                    "name": "iş",
+                    "help": "İş adı"
+                }
+            }
+        },
+        "addjob": {
+            "help": "Bir Oyuncuya İş Ekle (Yönetici Sadece)",
+            "params": {
+                "id": {
+                    "name": "İD",
+                    "help": "Oyuncu ID'si"
+                },
+                "job": {
+                    "name": "iş",
+                    "help": "İş adı"
+                },
+                "grade": {
+                    "name": "seviye",
+                    "help": "İş seviyesi"
+                }
+            }
+        },
+        "removejob": {
+            "help": "Bir Oyuncudan İşi Kaldır (Yönetici Sadece)",
+            "params": {
+                "id": {
+                    "name": "İD",
+                    "help": "Oyuncu ID'si"
+                },
+                "job": {
+                    "name": "iş",
+                    "help": "İş adı"
+                }
+            }
+        },
+        "gang": {
+            "help": "Çetenizi Kontrol Edin"
+        },
+        "setgang": {
+            "help": "Bir Oyuncunun Çetesini Ayarla (Yönetici Sadece)",
+            "params": {
+                "id": {
+                    "name": "İD",
+                    "help": "Oyuncu ID'si"
+                },
+                "gang": {
+                    "name": "çete",
+                    "help": "Çete adı"
+                },
+                "grade": {
+                    "name": "seviye",
+                    "help": "Çete seviyesi"
+                }
+            }
+        },
+        "ooc": {
+            "help": "OOC Sohbet Mesajı"
+        },
+        "me": {
+            "help": "Yerel mesaj göster",
+            "params": {
+                "message": {
+                    "name": "mesaj",
+                    "help": "Gönderilecek mesaj"
+                }
+            }
+        },
+        "optin": {
+            "help": "Yönetici görevine katılım seçeneğini açın/kapatın (Yalnızca Yönetici)"
+        }
+    }
+}

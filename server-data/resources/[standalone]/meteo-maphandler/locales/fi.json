@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Nosta nostoa",
+    "target_lift_lower": "Alempi nosto",
+    "target_door_unlock": "Avaa ovi",
+    "target_door_lock": "Lukitse ovi",
+    "notify_no_access": "Sinulla ei ole pääsyä tähän",
+    "notify_busy": "Odota, että se lakkaa liikkumasta",
+    "notify_locked": "Ovi lukossa",
+    "notify_unlocked": "Ovi avattu"
+}

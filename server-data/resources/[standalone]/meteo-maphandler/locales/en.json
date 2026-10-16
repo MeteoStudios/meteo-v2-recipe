@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Raise lift",
+    "target_lift_lower": "Lower lift",
+    "target_door_unlock": "Unlock door",
+    "target_door_lock": "Lock door",
+    "notify_no_access": "You don't have access to this",
+    "notify_busy": "Wait for it to stop moving",
+    "notify_locked": "Door locked",
+    "notify_unlocked": "Door unlocked"
+}

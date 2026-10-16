@@ -1,0 +1,94 @@
+# Meteo V2 Package - txAdmin recipe
+# Docs: https://docs.meteostudios.net/packages/meteo-v2-package
+# Support: https://discord.gg/P5cPsVTNZf
+
+$engine: 3
+$onesync: on
+name: Meteo V2 Package
+version: 2.12.0
+author: Meteo Studios
+description: >-
+  Meteo Studios V2 roleplay package. After deploying, download the Meteo scripts
+  from the CFX portal into resources/[meteostudios].
+
+tasks:
+  - action: download_file
+    url: https://github.com/MeteoStudios/meteo-v2-recipe/releases/latest/download/base.zip
+    path: ./tmp/base.zip
+  - action: unzip
+    src: ./tmp/base.zip
+    dest: ./tmp/meteo
+  - action: download_file
+    url: https://github.com/MeteoStudios/meteo-v2-recipe/releases/latest/download/assets.zip
+    path: ./tmp/assets.zip
+  - action: unzip
+    src: ./tmp/assets.zip
+    dest: ./tmp/meteo
+  - action: download_file
+    url: https://github.com/MeteoStudios/meteo-v2-recipe/releases/latest/download/images.zip
+    path: ./tmp/images.zip
+  - action: unzip
+    src: ./tmp/images.zip
+    dest: ./tmp/meteo
+
+  - action: move_path
+    src: ./tmp/meteo/server-data/resources
+    dest: ./resources
+  - action: move_path
+    src: ./tmp/meteo/server-data/tools
+    dest: ./tools
+
+  - action: download_file
+    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
+    path: ./tmp/oxmysql.zip
+  - action: unzip
+    src: ./tmp/oxmysql.zip
+    dest: "./resources/[ox]"
+  - action: download_github
+    src: https://github.com/citizenfx/cfx-server-data
+    ref: 0e7ba538339f7c1c26d0e689aa750a336576cf02
+    subpath: resources
+    dest: "./resources/[cfx-default]"
+  - action: remove_path
+    path: "./resources/[cfx-default]/[gameplay]/chat"
+  - action: remove_path
+    path: "./resources/[cfx-default]/[gameplay]/chat-theme-gtao"
+  - action: move_path
+    src: ./tmp/meteo/server-data/logo.png
+    dest: ./logo.png
+  - action: move_path
+    src: ./tmp/meteo/server-data/meteo.cfg
+    dest: ./meteo.cfg
+  - action: move_path
+    src: ./tmp/meteo/server-data/misc.cfg
+    dest: ./misc.cfg
+  - action: move_path
+    src: ./tmp/meteo/server-data/ox.cfg
+    dest: ./ox.cfg
+  - action: move_path
+    src: ./tmp/meteo/server-data/permissions.cfg
+    dest: ./permissions.cfg
+  - action: move_path
+    src: ./tmp/meteo/server-data/qbox.cfg
+    dest: ./qbox.cfg
+  - action: move_path
+    src: ./tmp/meteo/server-data/server.cfg
+    dest: ./server.cfg
+  - action: move_path
+    src: ./tmp/meteo/server-data/voice.cfg
+    dest: ./voice.cfg
+
+  - action: replace_string
+    mode: all_vars
+    file:
+      - ./server.cfg
+      - ./permissions.cfg
+
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/meteo/database/meteov2.sql
+  - action: query_database
+    file: ./tmp/meteo/database/meteov2data.sql
+
+  - action: remove_path
+    path: ./tmp

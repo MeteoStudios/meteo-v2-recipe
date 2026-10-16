@@ -1,0 +1,17 @@
+{
+    "commands": {
+        "setfuel": {"help": "Postavi razinu goriva vozila", "params": {"name": "level", "type": "number", "help": "Razina goriva koja se postavlja"}},
+        "fix": {"help": "Popravak trenutnog vozila"},
+        "wash": {"help": "Cisanje trenutnog vozila"}
+    },
+    "progress": {
+        "cleankit": "Cisanje vozila",
+        "tirerepairkit": "Popravak guma",
+        "smallkit": "Popravak vozila",
+        "bigkit": "Popravak vozila"
+    },
+    "notify": {
+        "cannotRepair": "Vozilo se ne moze dalje popraviti",
+        "backEngine": "Motor je smjesten u poledjini"
+    }
+}

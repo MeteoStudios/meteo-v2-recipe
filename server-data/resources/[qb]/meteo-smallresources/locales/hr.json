@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Samo za policajce"
+  },
+  "afk": {
+    "will_kick": "Nisi aktivan i bićeš izbačen za",
+    "time_seconds": "sekundi!",
+    "time_minutes": "minut(a)!",
+    "kick_message": "Izbačen si jer nisi bio aktivan"
+  },
+  "wash": {
+    "in_progress": "Vozilo se prosljeđuje..",
+    "wash_vehicle": "Operi vozilo",
+    "wash_vehicle_target": "Operi vozilo",
+    "dirty": "Vozilo nije prljavo",
+    "cancel": "Pranje je otkazano..",
+    "no_money": "Nemaš dovoljno novca"
+  },
+  "consumables": {
+    "eat_progress": "Jedem..",
+    "drink_progress": "Pijem..",
+    "liqour_progress": "Pijem alkohol..",
+    "coke_progress": "Brzo šmrcanje..",
+    "crack_progress": "Pušim crack..",
+    "ecstasy_progress": "Uzimam pilule",
+    "healing_progress": "Isceljujem",
+    "meth_progress": "Pušim met",
+    "joint_progress": "Palim spliff..",
+    "use_parachute_progress": "Stavljam padobran..",
+    "pack_parachute_progress": "Pakujem padobran..",
+    "no_parachute": "Nemaš padobran!",
+    "armor_full": "Već imaš dovoljno oklopa!",
+    "armor_empty": "Ne nosis kacigu..",
+    "armor_progress": "Stavljam telesnu oklopu..",
+    "heavy_armor_progress": "Stavljam telesnu oklopu..",
+    "remove_armor_progress": "Skidам telesnu oklopu..",
+    "canceled": "Otkazano..."
+  },
+  "cruise": {
+    "unavailable": "Cruise control nije dostupan",
+    "activated": "Cruise control je aktiviran",
+    "deactivated": "Cruise control je deaktiviran"
+  },
+  "editor": {
+    "started": "Počela sam snimanje!",
+    "save": "Sačuvan je snimak!",
+    "delete": "Obrisan je snimak!",
+    "editor": "Vidim se kasnije!"
+  },
+  "firework": {
+    "place_progress": "Postavljam fejerverke..",
+    "canceled": "Otkazano..",
+    "time_left": "Lansiranje fejerverka za ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Prilagođavam trkaći harnes",
+    "remove_harness_progress": "Uklanjam trkaći harnes",
+    "no_car": "Nisi u vozilu.",
+    "harness_on": "Ne možeš promeniti sigurnosni pojas dok je harnes opremljen",
+    "harness_broken": "Tvoj trkaći harnes se slomio!"
+  },
+  "teleport": {
+    "teleport_default": "Koristi lift"
+  },
+  "pushcar": {
+    "stop_push": "[E] Prestani da guraj"
+  }
+}

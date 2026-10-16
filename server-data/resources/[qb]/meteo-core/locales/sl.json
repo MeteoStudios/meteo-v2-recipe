@@ -1,0 +1,288 @@
+{
+    "error": {
+        "not_online": "Igralec ni online",
+        "wrong_format": "Napacen format",
+        "missing_args": "Nekateri argumenti niso bili vpisani (x, y, z)",
+        "missing_args2": "Vsi argumenti morajo biti vpisani!",
+        "no_access": "Nimas dostopa do te komande!",
+        "company_too_poor": "Tvoj delodajalec nima denarja",
+        "item_not_exist": "Predmet ne obstaja",
+        "too_heavy": "Tvoj inventorij je prevec poln",
+        "location_not_exist": "Lokacija ne obstaja",
+        "duplicate_license": "Najden je bil dvojnik licence Rockstar",
+        "no_valid_license": "Ni veljavne licence Rockstar",
+        "not_whitelisted": "Niste na seznamu dovoljenih za ta strežnik",
+        "server_already_open": "Strežnik je že odprt",
+        "server_already_closed": "Strežnik je že zaprt",
+        "no_permission": "Nimate dovoljenj za to..",
+        "no_waypoint": "Ni nastavljene točke poti.",
+        "tp_error": "Napaka pri teleportiranju.",
+        "connecting_database_timeout": "Povezava z bazo podatkov je potekla. (Ali je strežnik SQL vklopljen?)",
+        "connecting_error": "Med povezovanjem s strežnikom je prišlo do napake. (Preverite strežniško konzolo)",
+        "no_match_character_registration": "Vse razen črk ni dovoljeno, končni presledki tudi niso dovoljeni in besede se morajo v vnosnih poljih začeti z veliko začetnico. Lahko pa dodate besede s presledki vmes.",
+        "already_in_queue": "Ste že v čakalni vrsti.",
+        "no_subqueue": "Niso vas spustili v nobeno podvrsto.",
+        "character_delete_failed": "Brisanje znaka ni uspelo. prosim poskusite ponovno",
+        "not_optin": "Niste izbrani za dolžnost skrbnika. (/ možnost preklopa)"
+    },
+    "success": {
+        "server_opened": "Strežnik je odprt",
+        "server_closed": "Dirka se je začela brez vas – ni vas bilo na štandu",
+        "teleported_waypoint": "Teleportirano na točko poti.",
+        "character_deleted": "Lik izbrisan!",
+        "character_deleted_citizenid": "Uspešno ste izbrisali znak z ID-jem državljana %s.",
+        "optin_set": "Uspešno ste izbrali %s za dolžnost skrbnika."
+    },
+    "info": {
+        "received_paycheck": "Prejel si placilo $%s",
+        "job_info": "Sluzba: %s | Rang: %s | Dolznost: %s",
+        "gang_info": "Tolpa: %s | Rang: %s",
+        "on_duty": "Sedaj si na dolznosti!",
+        "off_duty": "Nisi vec na dolznosti!",
+        "checking_ban": "Pozdravljen %s. Preverjamo, ali ste prepovedani.",
+        "join_server": "Dobrodošli %s v %s.",
+        "checking_whitelisted": "Pozdravljen %s. Preverjamo vaš dodatek.",
+        "exploit_banned": "Zaradi goljufanja ste bili prepovedani. Za več informacij preverite naš Discord: %s",
+        "exploit_dropped": "Vrgli so vas zaradi izkoriščanja",
+        "multichar_title": "Qbox Multichar",
+        "multichar_new_character": "Nov lik #%s",
+        "char_male": "moški",
+        "char_female": "Ženska",
+        "play": "Igraj",
+        "play_description": "Igrajte kot %s",
+        "delete_character": "Izbriši znak",
+        "delete_character_description": "Izbrisati %s v lasti Z1Q iz baze podatkov? Tega ni mogoče razveljaviti.",
+        "logout_command_help": "Odjavi vas iz vašega trenutnega lika",
+        "check_id": "Preverite svoj ID strežnika",
+        "deletechar_command_help": "Izbrišite prizor, ki ga gledate",
+        "deletechar_command_arg_player_id": "ID igralca",
+        "character_registration_title": "Registracija znakov",
+        "first_name": "Ime",
+        "last_name": "Priimek",
+        "nationality": "Narodnost",
+        "gender": "Seks",
+        "birth_date": "Rojstni datum",
+        "select_gender": "Izberite svoj spol ...",
+        "confirm_delete": "Ali ste prepričani, da želite izbrisati ta znak?",
+        "in_queue": "🐌 Ste %s/%s v čakalni vrsti. (%s) %s",
+        "fetching_user": "Pridobivanje uporabnika ...",
+        "creating_user": "Ustvarjanje uporabnika ..."
+    },
+    "command": {
+        "tp": {
+            "help": "TP To Player ali Coords (samo skrbnik)",
+            "params": {
+                "x": {
+                    "name": "id/x",
+                    "help": "ID igralca ali položaj X"
+                },
+                "y": {
+                    "name": "y",
+                    "help": "Y položaj"
+                },
+                "z": {
+                    "name": "z",
+                    "help": "Z položaj"
+                }
+            }
+        },
+        "tpm": {
+            "help": "TP do markerja (samo skrbnik)"
+        },
+        "togglepvp": {
+            "help": "Preklop PVP na strežniku (samo skrbnik)"
+        },
+        "addpermission": {
+            "help": "Dajte igralcu dovoljenja (samo Bogu)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igralca"
+                },
+                "permission": {
+                    "name": "dovoljenje",
+                    "help": "Raven dovoljenja"
+                }
+            }
+        },
+        "removepermission": {
+            "help": "Odstrani dovoljenja igralca (samo Bog)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igralca"
+                },
+                "permission": {
+                    "name": "dovoljenje",
+                    "help": "Raven dovoljenja"
+                }
+            }
+        },
+        "openserver": {
+            "help": "Odpri strežnik za vse (samo skrbnik)"
+        },
+        "closeserver": {
+            "help": "Zaprite strežnik za osebe brez dovoljenj (samo skrbnik)",
+            "params": {
+                "reason": {
+                    "name": "razlog",
+                    "help": "Razlog za zaprtje (neobvezno)"
+                }
+            }
+        },
+        "car": {
+            "help": "Spawn Vehicle (samo skrbnik)",
+            "params": {
+                "model": {
+                    "name": "model",
+                    "help": "Ime modela vozila"
+                },
+                "keepCurrentVehicle": {
+                    "name": "obdrži trenutno vozilo",
+                    "help": "Obdržite vozilo, v katerem ste trenutno (pustite prazno, če želite izbrisati trenutno vozilo)"
+                }
+            }
+        },
+        "dv": {
+            "help": "Izbriši vozilo (samo skrbnik)",
+            "params": {
+                "radius": {
+                    "name": "polmer",
+                    "help": "Polmer za brisanje vozil v (metrih)"
+                }
+            }
+        },
+        "givemoney": {
+            "help": "Dajte igralcu denar (samo skrbnik)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igralca"
+                },
+                "moneytype": {
+                    "name": "denarna vrsta",
+                    "help": "Vrsta denarja (gotovina, banka, kripto)"
+                },
+                "amount": {
+                    "name": "znesek",
+                    "help": "Količina denarja"
+                }
+            }
+        },
+        "setmoney": {
+            "help": "Nastavite denarni znesek igralcev (samo skrbnik)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igralca"
+                },
+                "moneytype": {
+                    "name": "denarna vrsta",
+                    "help": "Vrsta denarja (gotovina, banka, kripto)"
+                },
+                "amount": {
+                    "name": "znesek",
+                    "help": "Količina denarja"
+                }
+            }
+        },
+        "job": {
+            "help": "Preverite svojo službo"
+        },
+        "setjob": {
+            "help": "Nastavite opravilo igralca (samo skrbnik)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igralca"
+                },
+                "job": {
+                    "name": "služba",
+                    "help": "Ime delovnega mesta"
+                },
+                "grade": {
+                    "name": "razred",
+                    "help": "Delovna ocena"
+                }
+            }
+        },
+        "changejob": {
+            "help": "Spremeni aktivno delo igralca (samo skrbnik)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igralca"
+                },
+                "job": {
+                    "name": "služba",
+                    "help": "Ime delovnega mesta"
+                }
+            }
+        },
+        "addjob": {
+            "help": "Dodaj opravilo igralcu (samo skrbnik)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igralca"
+                },
+                "job": {
+                    "name": "služba",
+                    "help": "Ime delovnega mesta"
+                },
+                "grade": {
+                    "name": "razred",
+                    "help": "Delovna ocena"
+                }
+            }
+        },
+        "removejob": {
+            "help": "Odstrani opravilo iz predvajalnika (samo skrbnik)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igralca"
+                },
+                "job": {
+                    "name": "služba",
+                    "help": "Ime delovnega mesta"
+                }
+            }
+        },
+        "gang": {
+            "help": "Preverite svojo skupino"
+        },
+        "setgang": {
+            "help": "Nastavite skupino igralcev (samo skrbnik)",
+            "params": {
+                "id": {
+                    "name": "id",
+                    "help": "ID igralca"
+                },
+                "gang": {
+                    "name": "tolpa",
+                    "help": "Ime skupine"
+                },
+                "grade": {
+                    "name": "razred",
+                    "help": "Gang razred"
+                }
+            }
+        },
+        "ooc": {
+            "help": "OOC sporočilo klepeta"
+        },
+        "me": {
+            "help": "Pokaži lokalno sporočilo",
+            "params": {
+                "message": {
+                    "name": "sporočilo",
+                    "help": "Sporočilo za pošiljanje"
+                }
+            }
+        },
+        "optin": {
+            "help": "Preklopi privolitev v dolžnost skrbnika (samo skrbnik)"
+        }
+    }
+}

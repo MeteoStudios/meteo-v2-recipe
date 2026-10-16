@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Chi danh cho canh sat"
+  },
+  "afk": {
+    "will_kick": "Ban dang AFK va se bi dai ra khoi trong",
+    "time_seconds": "giay!",
+    "time_minutes": "phut(s)!",
+    "kick_message": "Ban da bi dai ra khoi vi dang AFK"
+  },
+  "wash": {
+    "in_progress": "Phuong tien dang duoc rua...",
+    "wash_vehicle": "Rua phuong tien",
+    "wash_vehicle_target": "Rua phuong tien",
+    "dirty": "Phuong tien khong co ban",
+    "cancel": "Viec rua da bi huy...",
+    "no_money": "Ban khong co du tien"
+  },
+  "consumables": {
+    "eat_progress": "Dang an...",
+    "drink_progress": "Dang uong...",
+    "liqour_progress": "Dang uong ruou...",
+    "coke_progress": "Hut nhanh...",
+    "crack_progress": "Hut thuoc crack...",
+    "ecstasy_progress": "Uong vien",
+    "healing_progress": "Dang chua tri",
+    "meth_progress": "Hut meth",
+    "joint_progress": "Dang chat joint...",
+    "use_parachute_progress": "Dang deo du...",
+    "pack_parachute_progress": "Dang goi du...",
+    "no_parachute": "Ban khong co du!",
+    "armor_full": "Ban da co du ap lac!",
+    "armor_empty": "Ban khong deo ao giap...",
+    "armor_progress": "Dang deo ap lac...",
+    "heavy_armor_progress": "Dang deo ap lac nang...",
+    "remove_armor_progress": "Dang bo di ap lac...",
+    "canceled": "Da huy..."
+  },
+  "cruise": {
+    "unavailable": "Toc do nhanh khong khong co san",
+    "activated": "Toc do nhanh duoc kich hoat",
+    "deactivated": "Toc do nhanh da bi vo hieu hoa"
+  },
+  "editor": {
+    "started": "Bat dau ghi am!",
+    "save": "Da luu ghi am!",
+    "delete": "Da xoa ghi am!",
+    "editor": "Tam biet!"
+  },
+  "firework": {
+    "place_progress": "Dang dat phao hoa...",
+    "canceled": "Da huy...",
+    "time_left": "Phao hoa se phat nhat trong ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Gan day an toan dua xe",
+    "remove_harness_progress": "Bo di day an toan dua xe",
+    "no_car": "Ban khong trong xe.",
+    "harness_on": "Khong the doi day an toan khi co day dua xe",
+    "harness_broken": "Day an toan dua xe cua ban da vo!"
+  },
+  "teleport": {
+    "teleport_default": "Su dung thang may"
+  },
+  "pushcar": {
+    "stop_push": "[E] Dung day"
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "target_lift_raise": "Pakelkite keltuvą",
+    "target_lift_lower": "Apatinis keltuvas",
+    "target_door_unlock": "Atrakinti duris",
+    "target_door_lock": "Užrakinti duris",
+    "notify_no_access": "Neturite prieigos prie to",
+    "notify_busy": "Palaukite, kol jis nustos judėti",
+    "notify_locked": "Durys užrakintos",
+    "notify_unlocked": "Durys atrakintos"
+}

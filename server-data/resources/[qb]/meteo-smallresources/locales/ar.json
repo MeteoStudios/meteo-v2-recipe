@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "للشرطة فقط"
+  },
+  "afk": {
+    "will_kick": "أنت AFK وسيتم طردك في",
+    "time_seconds": "ثواني!",
+    "time_minutes": "دقيقة(دقائق)!",
+    "kick_message": "تم طردك لكونك AFK"
+  },
+  "wash": {
+    "in_progress": "يتم غسل السيارة...",
+    "wash_vehicle": "اغسل السيارة",
+    "wash_vehicle_target": "اغسل السيارة",
+    "dirty": "السيارة ليست متسخة",
+    "cancel": "تم إلغاء الغسيل...",
+    "no_money": "ليس لديك أموال كافية"
+  },
+  "consumables": {
+    "eat_progress": "تناول الطعام...",
+    "drink_progress": "الشرب...",
+    "liqour_progress": "شرب المشروبات الكحولية...",
+    "coke_progress": "شم سريع...",
+    "crack_progress": "تدخين الكراك...",
+    "ecstasy_progress": "تناول الحبوب",
+    "healing_progress": "الشفاء",
+    "meth_progress": "تدخين الميث",
+    "joint_progress": "إشعال السيجارة...",
+    "use_parachute_progress": "ارتداء المظلة...",
+    "pack_parachute_progress": "حزم المظلة...",
+    "no_parachute": "ليس لديك مظلة!",
+    "armor_full": "لديك درع كافي بالفعل!",
+    "armor_empty": "أنت لا ترتدي سترة واقية...",
+    "armor_progress": "ارتداء الدرع...",
+    "heavy_armor_progress": "ارتداء الدرع الثقيل...",
+    "remove_armor_progress": "خلع الدرع...",
+    "canceled": "تم الإلغاء..."
+  },
+  "cruise": {
+    "unavailable": "التحكم بالسرعة غير متاح",
+    "activated": "تم تفعيل التحكم بالسرعة",
+    "deactivated": "تم تعطيل التحكم بالسرعة"
+  },
+  "editor": {
+    "started": "بدأ التسجيل!",
+    "save": "تم الحفظ!",
+    "delete": "تم الحذف!",
+    "editor": "الى اللقاء!"
+  },
+  "firework": {
+    "place_progress": "وضع الالعاب النارية...",
+    "canceled": "تم الإلغاء...",
+    "time_left": "اطلاق الالعاب النارية في ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "ربط حزام السباق",
+    "remove_harness_progress": "فك حزام السباق",
+    "no_car": "أنت لا تركب في سيارة.",
+    "harness_on": "لا يمكن تبديل حزام الأمان أثناء ارتداء حزام السباق",
+    "harness_broken": "لقد انكسر حزام السباق الخاص بك!"
+  },
+  "teleport": {
+    "teleport_default": "استخدم المصعد"
+  },
+  "pushcar": {
+    "stop_push": "[E] توقف عن الدفع"
+  }
+}

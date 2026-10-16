@@ -1,0 +1,288 @@
+{
+    "error": {
+        "not_online": "اللاعب غير متصل",
+        "wrong_format": "التنسيق غير صحيح",
+        "missing_args": "(x, y, z) لم يتم ادخل جميع المعلومات",
+        "missing_args2": "يجب ملأ جميع الحقول اللازمة",
+        "no_access": "لا يمكن الوصول إلى هذا الأمر",
+        "company_too_poor": "مسؤول الوظيفة لا يمكلك مال كاف-ي",
+        "item_not_exist": "عنصر غير موجود",
+        "too_heavy": "لا يوجد مساحة في جقيبتك",
+        "location_not_exist": "الموقع غير موجود",
+        "duplicate_license": "وجدنا ترخيص روكستار مكرر او موجود مسبقا",
+        "no_valid_license": "ترخيص روكستار غير صحيح",
+        "not_whitelisted": "عضويتك غير مفعلة في هذا السيرفر",
+        "server_already_open": "السيرفر مفتوح بالفعل",
+        "server_already_closed": "السيرفر مغلق بالفعل",
+        "no_permission": "ليس لديك صلاحيات لهذا..",
+        "no_waypoint": "لم يتم تعيين نقطة طريق.",
+        "tp_error": "خطأ أثناء النقل الآني.",
+        "connecting_database_timeout": "انتهت مهلة الاتصال بقاعدة البيانات. (هل خادم SQL يعمل؟)",
+        "connecting_error": "حدث خطأ أثناء الاتصال بالخادم. (تحقق من طرفية الخادم)",
+        "no_match_character_registration": "غير مسموح بأي شيء غير الحروف، كما لا يُسمح بمسافات زائدة في النهاية، ويجب أن تبدأ الكلمات بحرف كبير في حقول الإدخال. يمكنك مع ذلك إضافة كلمات مع مسافات بينها.",
+        "already_in_queue": "أنت بالفعل في قائمة الانتظار.",
+        "no_subqueue": "لم يُسمح لك بالدخول في أي قائمة انتظار فرعية.",
+        "character_delete_failed": "فشل حذف الشخصية. حاول مرة أخرى.",
+        "not_optin": "أنت غير منضم لمهام الإدارة. (/optin للتبديل)"
+    },
+    "success": {
+        "server_opened": "تم فتح السيرفر",
+        "server_closed": "تم إغلاق السيرفر",
+        "teleported_waypoint": "تم الانتقال إلى نقطة الطريق.",
+        "character_deleted": "تم حذف الشخصية!",
+        "character_deleted_citizenid": "حذفت بنجاح الشخصية ذات Citizen ID %s.",
+        "optin_set": "لقد قمت بنجاح بضم %s لمهام الإدارة."
+    },
+    "info": {
+        "received_paycheck": "$%s لقد استملت راتبك الشهري",
+        "job_info": "%s | %s | %s",
+        "gang_info": "%s | %s",
+        "on_duty": "انت الان في الخدمة",
+        "off_duty": "انت الان خارج الخدمة",
+        "checking_ban": "نحن نتحقق اذا كنت محجوب من السيرفر. %s مرحبا",
+        "join_server": "%s قي %s مرحبا",
+        "checking_whitelisted": "نتحقق ما اذا كان مسموح لك بالدخول %s مرحبا ",
+        "exploit_banned": "تم حظرك بسبب الغش. راجع Discord الخاص بنا لمزيد من المعلومات: %s",
+        "exploit_dropped": "تم طردك بسبب الاستغلال",
+        "multichar_title": "Qbox Multichar",
+        "multichar_new_character": "شخصية جديدة #%s",
+        "char_male": "ذكر",
+        "char_female": "انثى",
+        "play": "تشغيل",
+        "play_description": "العب كـ %s",
+        "delete_character": "حذف الشخصية",
+        "delete_character_description": "حذف %s",
+        "logout_command_help": "يسجل خروجك من شخصيتك الحالية",
+        "check_id": "تحقق من ID الخادم الخاص بك",
+        "deletechar_command_help": "حذف شخصية لاعب",
+        "deletechar_command_arg_player_id": "معرف اللاعب",
+        "character_registration_title": "تسجيل الشخصية",
+        "first_name": "الاسم الاول",
+        "last_name": "الاسم الاخير",
+        "nationality": "الجنسية",
+        "gender": "الجنس",
+        "birth_date": "تاريخ الميلاد",
+        "select_gender": "اختر جنسك...",
+        "confirm_delete": "هل أنت متأكد أنك تريد حذف هذه الشخصية؟",
+        "in_queue": "🐌 أنت %s/%s في قائمة الانتظار. (%s) %s",
+        "fetching_user": "جارٍ جلب المستخدم...",
+        "creating_user": "جارٍ إنشاء المستخدم..."
+    },
+    "command": {
+        "tp": {
+            "help": "الانتقال إلى لاعب أو إحداثيات (للإدارة فقط)",
+            "params": {
+                "x": {
+                    "name": "ID/x",
+                    "help": "ID اللاعب أو الموضع X"
+                },
+                "y": {
+                    "name": "y",
+                    "help": "الموضع Y"
+                },
+                "z": {
+                    "name": "z",
+                    "help": "الموضع Z"
+                }
+            }
+        },
+        "tpm": {
+            "help": "الانتقال إلى العلامة (للإدارة فقط)"
+        },
+        "togglepvp": {
+            "help": "تبديل PVP في السيرفر (للإدارة فقط)"
+        },
+        "addpermission": {
+            "help": "منح صلاحيات للاعب (لـ God فقط)",
+            "params": {
+                "id": {
+                    "name": "ID",
+                    "help": "ID اللاعب"
+                },
+                "permission": {
+                    "name": "الصلاحية",
+                    "help": "مستوى الصلاحية"
+                }
+            }
+        },
+        "removepermission": {
+            "help": "إزالة صلاحيات اللاعب (لرتبة God فقط)",
+            "params": {
+                "id": {
+                    "name": "ID",
+                    "help": "ID اللاعب"
+                },
+                "permission": {
+                    "name": "الصلاحية",
+                    "help": "مستوى الصلاحية"
+                }
+            }
+        },
+        "openserver": {
+            "help": "فتح الخادم للجميع (للإدارة فقط)"
+        },
+        "closeserver": {
+            "help": "أغلق الخادم للأشخاص بدون صلاحيات (للإدارة فقط)",
+            "params": {
+                "reason": {
+                    "name": "السبب",
+                    "help": "سبب الإغلاق (اختياري)"
+                }
+            }
+        },
+        "car": {
+            "help": "إنشاء مركبة (للإدارة فقط)",
+            "params": {
+                "model": {
+                    "name": "الطراز",
+                    "help": "اسم طراز المركبة"
+                },
+                "keepCurrentVehicle": {
+                    "name": "keepCurrentVehicle",
+                    "help": "احتفظ بالمركبة التي أنت فيها الآن (اتركه فارغًا لحذف المركبة الحالية)"
+                }
+            }
+        },
+        "dv": {
+            "help": "حذف مركبة (للإدارة فقط)",
+            "params": {
+                "radius": {
+                    "name": "نصف القطر",
+                    "help": "نصف قطر حذف المركبات (بالأمتار)"
+                }
+            }
+        },
+        "givemoney": {
+            "help": "إعطاء لاعب مالاً (للإدارة فقط)",
+            "params": {
+                "id": {
+                    "name": "ID",
+                    "help": "معرف اللاعب"
+                },
+                "moneytype": {
+                    "name": "moneytype",
+                    "help": "نوع المال (نقدي، بنكي، عملة رقمية)"
+                },
+                "amount": {
+                    "name": "المبلغ",
+                    "help": "مبلغ المال"
+                }
+            }
+        },
+        "setmoney": {
+            "help": "تعيين مبلغ مال اللاعب (للإدارة فقط)",
+            "params": {
+                "id": {
+                    "name": "ID",
+                    "help": "معرف اللاعب"
+                },
+                "moneytype": {
+                    "name": "moneytype",
+                    "help": "نوع المال (نقدي، بنكي، عملة رقمية)"
+                },
+                "amount": {
+                    "name": "المبلغ",
+                    "help": "مبلغ المال"
+                }
+            }
+        },
+        "job": {
+            "help": "تحقق من وظيفتك"
+        },
+        "setjob": {
+            "help": "تعيين وظيفة اللاعب (للإدارة فقط)",
+            "params": {
+                "id": {
+                    "name": "ID",
+                    "help": "معرف اللاعب"
+                },
+                "job": {
+                    "name": "الوظيفة",
+                    "help": "اسم الوظيفة"
+                },
+                "grade": {
+                    "name": "الدرجة",
+                    "help": "رتبة الوظيفة"
+                }
+            }
+        },
+        "changejob": {
+            "help": "تغيير الوظيفة النشطة للاعب (للإدارة فقط)",
+            "params": {
+                "id": {
+                    "name": "ID",
+                    "help": "معرف اللاعب"
+                },
+                "job": {
+                    "name": "الوظيفة",
+                    "help": "اسم الوظيفة"
+                }
+            }
+        },
+        "addjob": {
+            "help": "إضافة وظيفة للاعب (للإدارة فقط)",
+            "params": {
+                "id": {
+                    "name": "ID",
+                    "help": "معرف اللاعب"
+                },
+                "job": {
+                    "name": "الوظيفة",
+                    "help": "اسم الوظيفة"
+                },
+                "grade": {
+                    "name": "الدرجة",
+                    "help": "رتبة الوظيفة"
+                }
+            }
+        },
+        "removejob": {
+            "help": "إزالة الوظيفة من اللاعب (للإدارة فقط)",
+            "params": {
+                "id": {
+                    "name": "ID",
+                    "help": "معرف اللاعب"
+                },
+                "job": {
+                    "name": "الوظيفة",
+                    "help": "اسم الوظيفة"
+                }
+            }
+        },
+        "gang": {
+            "help": "تحقق من عصابتك"
+        },
+        "setgang": {
+            "help": "تعيين عصابة اللاعب (للإدارة فقط)",
+            "params": {
+                "id": {
+                    "name": "ID",
+                    "help": "معرف اللاعب"
+                },
+                "gang": {
+                    "name": "عصابة",
+                    "help": "اسم العصابة"
+                },
+                "grade": {
+                    "name": "الدرجة",
+                    "help": "رتبة العصابة"
+                }
+            }
+        },
+        "ooc": {
+            "help": "رسالة دردشة OOC"
+        },
+        "me": {
+            "help": "إظهار رسالة محلية",
+            "params": {
+                "message": {
+                    "name": "رسالة",
+                    "help": "الرسالة المراد إرسالها"
+                }
+            }
+        },
+        "optin": {
+            "help": "تبديل الانضمام لمهام الإدارة (للإدارة فقط)"
+        }
+    }
+}

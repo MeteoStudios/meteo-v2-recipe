@@ -1,0 +1,288 @@
+{
+    "error": {
+        "not_online": "שחקן לא מחובר",
+        "wrong_format": "פורמט שגוי",
+        "missing_args": "(x, y, z) לא כל פרמטר הוזן",
+        "missing_args2": "!יש להזין את כל הפרמטרים",
+        "no_access": "אין גישה לפקודה זו",
+        "company_too_poor": "המעסיק שלך עני מידי",
+        "item_not_exist": "פריט לא קיים",
+        "too_heavy": "אינבנטורי מלא",
+        "location_not_exist": "מקום לא קיים",
+        "duplicate_license": "Rockstar נמצא שכפול רישיון",
+        "no_valid_license": "תקף Rockstar לא נמצא רישיון",
+        "not_whitelisted": "את/ה לא ברשימת המותרים בשרת הזה",
+        "server_already_open": "השרת כבר פתוח",
+        "server_already_closed": "השרת כבר סגור",
+        "no_permission": "אין לך גישה לזה",
+        "no_waypoint": "נקודת המיקום לא הוגדרה",
+        "tp_error": "התרחשה שגיאה במהלך טלפורטציה",
+        "connecting_database_timeout": "תם הזמן הקצוב לחיבור למסד הנתונים. (האם שרת SQL פועל?)",
+        "connecting_error": "אירעה שגיאה בעת ההתחברות לשרת. (בדוק את קונסולת השרת שלך)",
+        "no_match_character_registration": "כל דבר פרט לאותיות אסור, גם רווחים לבנים עוקבים אינם מותרים ומילים חייבות להתחיל באות גדולה בשדות קלט. עם זאת, אתה יכול להוסיף מילים עם רווחים ביניהן.",
+        "already_in_queue": "אתה כבר בתור.",
+        "no_subqueue": "לא הוכנסת לאף תת-תור.",
+        "character_delete_failed": "מחיקת התווים נכשלה. אנא נסה שוב.",
+        "not_optin": "אינך רשום לתפקיד מנהל. (/optin כדי להחליף)"
+    },
+    "success": {
+        "server_opened": "השרת נפתח",
+        "server_closed": "השרת נסגר",
+        "teleported_waypoint": "נשלחת בטלפורטציה לנקודת המיקום",
+        "character_deleted": "הדמות נמחקה!",
+        "character_deleted_citizenid": "מחקת בהצלחה את הדמות עם מספר אזרח %s.",
+        "optin_set": "רשמת בהצלחה %s לתפקיד מנהל."
+    },
+    "info": {
+        "received_paycheck": "$%s קיבלת תלוש שכר על סך",
+        "job_info": "%s :בתפקיד | %s :דרגה | %s :עבודה",
+        "gang_info": "%s :דרגה | %s :גאנג",
+        "on_duty": "!עלית לתפקיד",
+        "off_duty": "!ירדת מהתפקיד",
+        "checking_ban": ".אנחנו בודקים אם את/ה חסום/ה בשרת הזה .%s שלום",
+        "join_server": ".%s-ל %s ברוך/ה הבא/ה",
+        "checking_whitelisted": ".אנחנו בודקים אם את/ה ברשימת המותרים .%s שלום",
+        "exploit_banned": "%s :נחסמת מהשרת על רמאות. למידע נוסף, הצטרף/י לשרת הדיסקורד שלנו",
+        "exploit_dropped": "הועפת מהשרת על רמאות",
+        "multichar_title": "Qbox Multichar",
+        "multichar_new_character": "דמות חדשה #%s",
+        "char_male": "זכר",
+        "char_female": "נקבה",
+        "play": "נגן",
+        "play_description": "שחק בתור %s",
+        "delete_character": "מחק דמות",
+        "delete_character_description": "מחק את %s",
+        "logout_command_help": "מנתקת אותך מהדמות הנוכחית שלך",
+        "check_id": "בדוק את מזהה השרת שלך",
+        "deletechar_command_help": "מחק דמות של שחקן",
+        "deletechar_command_arg_player_id": "מזהה שחקן",
+        "character_registration_title": "רישום דמות",
+        "first_name": "שם פרטי",
+        "last_name": "שם משפחה",
+        "nationality": "אזרחות",
+        "gender": "מין",
+        "birth_date": "תאריך לידה",
+        "select_gender": "בחר מגדר...",
+        "confirm_delete": "האם אתה בטוח שברצונך למחוק את הדמות הזו?",
+        "in_queue": "🐌 אתה %s/%s בתור. (%s) %s",
+        "fetching_user": "מביא משתמש...",
+        "creating_user": "פרסי קריפטו"
+    },
+    "command": {
+        "tp": {
+            "help": "(אדמינים בלבד) טלפורט לשחקן או לקואורדינטות",
+            "params": {
+                "x": {
+                    "name": "מזהה/x",
+                    "help": "X של שחקן או קואורדינטת ID"
+                },
+                "y": {
+                    "name": "y",
+                    "help": "Y קואורדינטת"
+                },
+                "z": {
+                    "name": "z",
+                    "help": "Z קואורדינטת"
+                }
+            }
+        },
+        "tpm": {
+            "help": "טלפורט לנקודת מיקום (אדמינים בלבד)"
+        },
+        "togglepvp": {
+            "help": "(אדמינים בלבד) בשרת PVP להפעיל/לכבות"
+        },
+        "addpermission": {
+            "help": "(גוד בלבד) להביא גישה לשחקן",
+            "params": {
+                "id": {
+                    "name": "מזהה",
+                    "help": "של שחקן ID"
+                },
+                "permission": {
+                    "name": "גישה",
+                    "help": "רמת הגישה"
+                }
+            }
+        },
+        "removepermission": {
+            "help": "(גוד בלבד) להסיר גישה לשחקן",
+            "params": {
+                "id": {
+                    "name": "מזהה",
+                    "help": "של שחקן ID"
+                },
+                "permission": {
+                    "name": "גישה",
+                    "help": "רמת הגישה"
+                }
+            }
+        },
+        "openserver": {
+            "help": "פתח את השרת לכולם (אדמינים בלבד)"
+        },
+        "closeserver": {
+            "help": "סגור את השרת לשחקנים ללא גישות (אדמינים בלבד)",
+            "params": {
+                "reason": {
+                    "name": "סיבה",
+                    "help": "הסיבה לסגירה (אופציונלי)"
+                }
+            }
+        },
+        "car": {
+            "help": "תיצור רכב (אדמינים בלבד)",
+            "params": {
+                "model": {
+                    "name": "דגם",
+                    "help": "שם הדגם של הרכב"
+                },
+                "keepCurrentVehicle": {
+                    "name": "keepCurrentVehicle",
+                    "help": "שמור על הרכב שבו אתה נמצא כרגע (השאר ריק כדי למחוק את הרכב הנוכחי)"
+                }
+            }
+        },
+        "dv": {
+            "help": "מחק רכב (אדמינים בלבד)",
+            "params": {
+                "radius": {
+                    "name": "רדיוס",
+                    "help": "רדיוס למחיקת רכבים (מטרים)"
+                }
+            }
+        },
+        "givemoney": {
+            "help": "תן כסף לשחקן (אדמינים בלבד)",
+            "params": {
+                "id": {
+                    "name": "מזהה",
+                    "help": "של שחקן ID"
+                },
+                "moneytype": {
+                    "name": "סוג כסף",
+                    "help": "(cash, bank, crypto) סוג הכסף"
+                },
+                "amount": {
+                    "name": "כמות",
+                    "help": "כמות הכסף"
+                }
+            }
+        },
+        "setmoney": {
+            "help": "קבע סכום כסף לשחקן (אדמינים בלבד)",
+            "params": {
+                "id": {
+                    "name": "מזהה",
+                    "help": "של שחקן ID"
+                },
+                "moneytype": {
+                    "name": "סוג כסף",
+                    "help": "(cash, bank, crypto) סוג הכסף"
+                },
+                "amount": {
+                    "name": "כמות",
+                    "help": "כמות הכסף"
+                }
+            }
+        },
+        "job": {
+            "help": "בדוק את העבודה שלך"
+        },
+        "setjob": {
+            "help": "קבע עבודה לשחקן (אדמינים בלבד)",
+            "params": {
+                "id": {
+                    "name": "מזהה",
+                    "help": "של שחקן ID"
+                },
+                "job": {
+                    "name": "עבודה",
+                    "help": "שם העבודה"
+                },
+                "grade": {
+                    "name": "דרגה",
+                    "help": "דרגת העבודה"
+                }
+            }
+        },
+        "changejob": {
+            "help": "שנה תפקיד פעיל של שחקן (מנהל בלבד)",
+            "params": {
+                "id": {
+                    "name": "מזהה",
+                    "help": "מזהה שחקן"
+                },
+                "job": {
+                    "name": "עבודה",
+                    "help": "שם העבודה"
+                }
+            }
+        },
+        "addjob": {
+            "help": "הוסף עבודה לנגן (מנהל בלבד)",
+            "params": {
+                "id": {
+                    "name": "מזהה",
+                    "help": "מזהה שחקן"
+                },
+                "job": {
+                    "name": "עבודה",
+                    "help": "שם העבודה"
+                },
+                "grade": {
+                    "name": "דרגה",
+                    "help": "דרגת העבודה"
+                }
+            }
+        },
+        "removejob": {
+            "help": "הסר עבודה משחקן (למנהלים בלבד)",
+            "params": {
+                "id": {
+                    "name": "מזהה",
+                    "help": "מזהה שחקן"
+                },
+                "job": {
+                    "name": "עבודה",
+                    "help": "שם העבודה"
+                }
+            }
+        },
+        "gang": {
+            "help": "בדוק את הגאנג שלך"
+        },
+        "setgang": {
+            "help": "קבע גאנג לשחקן (אדמינים בלבד)",
+            "params": {
+                "id": {
+                    "name": "מזהה",
+                    "help": "של שחקן ID"
+                },
+                "gang": {
+                    "name": "גאנג",
+                    "help": "שם הגאנג"
+                },
+                "grade": {
+                    "name": "דרגה",
+                    "help": "דרגת הגאנג"
+                }
+            }
+        },
+        "ooc": {
+            "help": "OOC הודעת"
+        },
+        "me": {
+            "help": "הצג הודעה מקומית",
+            "params": {
+                "message": {
+                    "name": "הודעה",
+                    "help": "ההודעה שתישלח"
+                }
+            }
+        },
+        "optin": {
+            "help": "הפעל/כבה השתתפות בתפקיד מנהל (למנהלים בלבד)"
+        }
+    }
+}

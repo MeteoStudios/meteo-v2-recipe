@@ -1,0 +1,68 @@
+{
+  "server": {
+    "police_only": "Solo para Oficiales de Policia"
+  },
+  "afk": {
+    "will_kick": "Estás AFK y seras expulsado en",
+    "time_seconds": "segundos!",
+    "time_minutes": "minuto(s)!",
+    "kick_message": "Fuiste expulsado por estar AFK"
+  },
+  "wash": {
+    "in_progress": "El vehiculo se esta lavando...",
+    "wash_vehicle": "Lavar Vehiculo",
+    "wash_vehicle_target": "Lavar Vehiculo",
+    "dirty": "El vehiculo no esta sucio",
+    "cancel": "Lavado cancelado...",
+    "no_money": "No tienes suficiente dinero"
+  },
+  "consumables": {
+    "eat_progress": "Comiendo...",
+    "drink_progress": "Bebiendo...",
+    "liqour_progress": "Bebiendo licor...",
+    "coke_progress": "Aspirando rapido...",
+    "crack_progress": "Fumando crack...",
+    "ecstasy_progress": "Tomando pastillas",
+    "healing_progress": "Curando",
+    "meth_progress": "Fumando metanfetamina",
+    "joint_progress": "Encendiendo porro...",
+    "use_parachute_progress": "Poniendose paracaidas...",
+    "pack_parachute_progress": "Embalando paracaidas...",
+    "no_parachute": "No tienes paracaidas!",
+    "armor_full": "Ya tienes suficiente armadura!",
+    "armor_empty": "No llevas chaleco...",
+    "armor_progress": "Poniendose armadura...",
+    "heavy_armor_progress": "Poniendose armadura pesada...",
+    "remove_armor_progress": "Quitandose armadura...",
+    "canceled": "Cancelado..."
+  },
+  "cruise": {
+    "unavailable": "Control de crucero no disponible",
+    "activated": "Control de crucero activado",
+    "deactivated": "Control de crucero desactivado"
+  },
+  "editor": {
+    "started": "Grabacion iniciada!",
+    "save": "Grabacion guardada!",
+    "delete": "Grabacion eliminada!",
+    "editor": "Hasta luego!"
+  },
+  "firework": {
+    "place_progress": "Colocando fuegos artificiales...",
+    "canceled": "Cancelado...",
+    "time_left": "Fuegos artificiales en ~r~"
+  },
+  "seatbelt": {
+    "use_harness_progress": "Colocando arnes de carrera",
+    "remove_harness_progress": "Removiendo arnes de carrera",
+    "no_car": "No estas en un auto.",
+    "harness_on": "No puedes cambiar el cinturon mientras tienes el arnes puesto",
+    "harness_broken": "Tu arnes de carrera se rompio!"
+  },
+  "teleport": {
+    "teleport_default": "Usa el Ascensor"
+  },
+  "pushcar": {
+    "stop_push": "[E] Dejar de Empujar"
+  }
+}

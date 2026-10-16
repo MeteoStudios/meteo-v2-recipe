@@ -1,0 +1,288 @@
+{
+    "error": {
+        "not_online": "Le joueur n'est pas connecté",
+        "wrong_format": "Format invalide",
+        "missing_args": "Arguments manquants (x, y, z)",
+        "missing_args2": "Tous les arguments doivent être renseignés !",
+        "no_access": "Vous n'avez pas la permission d'utiliser cette commande",
+        "company_too_poor": "Votre entreprise n'a pas suffisamment d'argent",
+        "item_not_exist": "L'objet n'existe pas",
+        "too_heavy": "L'inventaire est plein",
+        "location_not_exist": "Destination inexistante",
+        "duplicate_license": "Licence Rockstar dupliquée trouvée",
+        "no_valid_license": "Aucune licence Rockstar trouvée",
+        "not_whitelisted": "Vous n'êtes pas autorisé à accéder à ce serveur",
+        "server_already_open": "Le serveur est déjà ouvert",
+        "server_already_closed": "Le serveur est déjà fermé",
+        "no_permission": "Vous n'avez pas l'autorisation pour cela",
+        "no_waypoint": "Aucun marqueur défini.",
+        "tp_error": "Impossible de vous téléporter.",
+        "connecting_database_timeout": "La connexion à la base de données a expiré. (Le serveur SQL est-il allumé ?)",
+        "connecting_error": "Une erreur s'est produite lors de la connexion au serveur. (Vérifiez la console de votre serveur)",
+        "no_match_character_registration": "Les champs doivent contenir uniquement des lettres, commencer par une majuscule et ne pas finir par un espace. Vous pouvez ajouter plusieurs mots séparés par des espaces.",
+        "already_in_queue": "Vous êtes déjà dans la file d'attente.",
+        "no_subqueue": "Vous n’êtes pas autorisé à rejoindre la file d’attente.",
+        "character_delete_failed": "La suppression du personnage a échoué. Veuillez réessayer.",
+        "not_optin": "Vous n’êtes pas inscrit aux tâches administratives. (/opter pour basculer)"
+    },
+    "success": {
+        "server_opened": "Le serveur a été ouvert",
+        "server_closed": "Le serveur a été fermé",
+        "teleported_waypoint": "Téléporté à votre marqueur",
+        "character_deleted": "Personnage supprimé !",
+        "character_deleted_citizenid": "Le personnage avec pour ID Citoyen %s à été supprimé.",
+        "optin_set": "Vous avez opté avec succès pour %s pour les tâches administratives."
+    },
+    "info": {
+        "received_paycheck": "Vous avez reçu votre salaire de : $%s",
+        "job_info": "Emplois: %s | Grade: %s | Service: %s",
+        "gang_info": "Groupe : %s | Catégorie : %s",
+        "on_duty": "Vous êtes désormais en service!",
+        "off_duty": "Vous n'êtes plus en service!",
+        "checking_ban": "Bonjour %s. Nous vérifions si vous êtes banni.",
+        "join_server": "Bienvenue %s sur %s.",
+        "checking_whitelisted": "Bonjour %s. Nous vérifions si vous êtes Whitelist.",
+        "exploit_banned": "Vous avez été banni pour triche. Rendez-vous sur notre Discord pour plus d'informations : %s",
+        "exploit_dropped": "Vous avez été expulsé pour exploitation.",
+        "multichar_title": "Vos personnages",
+        "multichar_new_character": "Nouveau personnage #%s",
+        "char_male": "Homme",
+        "char_female": "Femme",
+        "play": "Jouer",
+        "play_description": "Jouer avec %s",
+        "delete_character": "Supprimer le personnage",
+        "delete_character_description": "Supprimer le personnage %s",
+        "logout_command_help": "Vous ramène à l'écran de sélection de personnage",
+        "check_id": "Vérifier votre ID Serveur",
+        "deletechar_command_help": "Supprime le personnage d'un joueur",
+        "deletechar_command_arg_player_id": "ID Joueur",
+        "character_registration_title": "Création de personnage",
+        "first_name": "Prénom",
+        "last_name": "Nom",
+        "nationality": "Nationalité",
+        "gender": "Genre",
+        "birth_date": "Date de naissance",
+        "select_gender": "Sélectionnez votre genre",
+        "confirm_delete": "Êtes-vous sûr de vouloir supprimer ce personnage?",
+        "in_queue": "🐌 Vous êtes %s/%s dans la file d’attente. (%s) %s",
+        "fetching_user": "Récupération de l'utilisateur...",
+        "creating_user": "Création d'un utilisateur..."
+    },
+    "command": {
+        "tp": {
+            "help": "TP vers un joueur ou des coordonnées (Admin Only)",
+            "params": {
+                "x": {
+                    "name": "identifiant/x",
+                    "help": "ID du joueur ou position X"
+                },
+                "y": {
+                    "name": "y",
+                    "help": "Position Y"
+                },
+                "z": {
+                    "name": "z",
+                    "help": "Position Z"
+                }
+            }
+        },
+        "tpm": {
+            "help": "TP au marqueur (Admin Only)"
+        },
+        "togglepvp": {
+            "help": "Activer/Désactiver le PVP sur le serveur (Admin Only)"
+        },
+        "addpermission": {
+            "help": "Donner des permissions à un joueur (God Only)",
+            "params": {
+                "id": {
+                    "name": "identifiant",
+                    "help": "ID du joueur"
+                },
+                "permission": {
+                    "name": "autorisation",
+                    "help": "Niveau de permission"
+                }
+            }
+        },
+        "removepermission": {
+            "help": "Retirer les permissions d'un joueur (God Only)",
+            "params": {
+                "id": {
+                    "name": "identifiant",
+                    "help": "ID du joueur"
+                },
+                "permission": {
+                    "name": "autorisation",
+                    "help": "Niveau de permission"
+                }
+            }
+        },
+        "openserver": {
+            "help": "Ouvrir le serveur à tout le monde (Admin Only)"
+        },
+        "closeserver": {
+            "help": "Fermer le serveur aux joueurs sans autorisation (Admin Only)",
+            "params": {
+                "reason": {
+                    "name": "raison",
+                    "help": "Raison de fermeture du serveur (Optionnel)"
+                }
+            }
+        },
+        "car": {
+            "help": "Faire apparaître un véhicule (Admin Only)",
+            "params": {
+                "model": {
+                    "name": "modèle",
+                    "help": "Modèle du véhicule"
+                },
+                "keepCurrentVehicle": {
+                    "name": "conserver le véhicule actuel",
+                    "help": "Conservez le véhicule dans lequel vous vous trouvez actuellement (laissez vide pour supprimer le véhicule actuel)"
+                }
+            }
+        },
+        "dv": {
+            "help": "Supprimer un véhicule (Admin Only)",
+            "params": {
+                "radius": {
+                    "name": "rayon",
+                    "help": "Rayon de suppression des véhicules en (mètres)"
+                }
+            }
+        },
+        "givemoney": {
+            "help": "Donner de l'argent à un joueur (Admin Only)",
+            "params": {
+                "id": {
+                    "name": "identifiant",
+                    "help": "ID du joueur"
+                },
+                "moneytype": {
+                    "name": "type d'argent",
+                    "help": "Type d'argent (cash, bank, crypto)"
+                },
+                "amount": {
+                    "name": "montant",
+                    "help": "Montant"
+                }
+            }
+        },
+        "setmoney": {
+            "help": "Définir le solde d'un joueur (Admin Only)",
+            "params": {
+                "id": {
+                    "name": "identifiant",
+                    "help": "ID du joueur"
+                },
+                "moneytype": {
+                    "name": "type d'argent",
+                    "help": "Type d'argent (cash, bank, crypto)"
+                },
+                "amount": {
+                    "name": "montant",
+                    "help": "Montant"
+                }
+            }
+        },
+        "job": {
+            "help": "Voir votre métier"
+        },
+        "setjob": {
+            "help": "Définir le métier d'un joueur (Admin Only)",
+            "params": {
+                "id": {
+                    "name": "identifiant",
+                    "help": "ID du joueur"
+                },
+                "job": {
+                    "name": "emploi",
+                    "help": "Nom du métier"
+                },
+                "grade": {
+                    "name": "grade",
+                    "help": "Grade"
+                }
+            }
+        },
+        "changejob": {
+            "help": "Changer le métier actif d'un joueur (Admin Only)",
+            "params": {
+                "id": {
+                    "name": "identifiant",
+                    "help": "ID du joueur"
+                },
+                "job": {
+                    "name": "emploi",
+                    "help": "Nom du métier"
+                }
+            }
+        },
+        "addjob": {
+            "help": "Ajouter un métier à un joueur (Admin Only)",
+            "params": {
+                "id": {
+                    "name": "identifiant",
+                    "help": "ID du joueur"
+                },
+                "job": {
+                    "name": "emploi",
+                    "help": "Nom du métier"
+                },
+                "grade": {
+                    "name": "grade",
+                    "help": "Grade"
+                }
+            }
+        },
+        "removejob": {
+            "help": "Retirer un métier à un joueur (Admin Only)",
+            "params": {
+                "id": {
+                    "name": "identifiant",
+                    "help": "ID du joueur"
+                },
+                "job": {
+                    "name": "emploi",
+                    "help": "Nom du métier"
+                }
+            }
+        },
+        "gang": {
+            "help": "Voir votre gang"
+        },
+        "setgang": {
+            "help": "Définir le gang d'un joueur (Admin Only)",
+            "params": {
+                "id": {
+                    "name": "identifiant",
+                    "help": "ID du joueur"
+                },
+                "gang": {
+                    "name": "gang",
+                    "help": "Nom du Gang"
+                },
+                "grade": {
+                    "name": "grade",
+                    "help": "Grade"
+                }
+            }
+        },
+        "ooc": {
+            "help": "Envoyer un message HRP"
+        },
+        "me": {
+            "help": "Envoyer un message local",
+            "params": {
+                "message": {
+                    "name": "message",
+                    "help": "Message"
+                }
+            }
+        },
+        "optin": {
+            "help": "Activer l'activation des tâches d'administration (administrateur uniquement)"
+        }
+    }
+}
