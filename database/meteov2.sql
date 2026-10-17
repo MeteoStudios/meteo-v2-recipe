@@ -2334,6 +2334,7 @@ CREATE TABLE IF NOT EXISTS `player_vehicles` (
   `state` int DEFAULT 1,
   `depotprice` int NOT NULL DEFAULT 0,
   `impound_reason` varchar(255) DEFAULT NULL,
+  `impound_until` int unsigned DEFAULT NULL,
   `isfav` tinyint DEFAULT 0,
   `drivingdistance` int DEFAULT NULL,
   `status` text DEFAULT NULL,
@@ -3246,9 +3247,6 @@ CREATE TABLE IF NOT EXISTS `meteo_props_complexes` (
   CONSTRAINT fk_meteo_props_cx_type FOREIGN KEY (type_id)
   REFERENCES meteo_props_types (id) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Older databases miss this column
-ALTER TABLE `meteo_props_complexes` ADD COLUMN IF NOT EXISTS room_images LONGTEXT NULL AFTER hidden;
 
 CREATE TABLE IF NOT EXISTS `meteo_props_doors` (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
