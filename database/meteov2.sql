@@ -2912,6 +2912,9 @@ CREATE TABLE IF NOT EXISTS `meteo_phone_devices` (
   `owner` VARCHAR(50) DEFAULT NULL,
   `settings` TEXT DEFAULT NULL,
   `layout` TEXT DEFAULT NULL,
+  `locked` TINYINT(1) NOT NULL DEFAULT 0, -- owner reported it at a shop
+  `lock_message` VARCHAR(160) DEFAULT NULL,
+  `lock_name` VARCHAR(48) DEFAULT NULL,
   `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -3188,6 +3191,9 @@ CREATE TABLE IF NOT EXISTS `meteo_phone_sims` (
   `pin_hash` VARCHAR(100) DEFAULT NULL,
   `unlocked_device` INT UNSIGNED DEFAULT NULL, -- phone the PIN was entered in
   `calls_seen_id` BIGINT UNSIGNED NOT NULL DEFAULT 0,
+  `barred` TINYINT(1) NOT NULL DEFAULT 0, -- owner barred it at a shop
+  `retired` TINYINT(1) NOT NULL DEFAULT 0, -- number given up for a new one
+  `card` SMALLINT UNSIGNED NOT NULL DEFAULT 0, -- older cards are void
   `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uk_number` (`number`),
