@@ -1,0 +1,13 @@
+{
+  "latest": "2.12.0",
+  "minimum": "2.7.0",
+  "releases": [
+    {"version": "2.7.0", "critical": true, "message": "Major update. Meteo Server now supports qbox and ox inventory with improved security, expanded third-party script compatibility, and codebase improvements for future scalability."},
+    {"version": "2.8.0", "critical": true, "message": "Major update. Includes major performance, syncing, and scripts improvements with support for handling larger player counts. Many fixes and optimizations were made in this update. Highly recommend doing this update."},
+    {"version": "2.9.0", "critical": true, "message": "Major update. Added new features including permissions groups, custom job support for Job Tablet, inventory combine items support, new lean drug and multiple improvements and fixes across scripts, UI."},
+    {"version": "2.10.0", "critical": true, "message": "Major update. Added the Crime Tablet racing system with track creator, ELO and leaderboards, adjustable vehicle trunks, in-game perks creator, major Phone banking improvements, and multiple fixes and optimizations."},
+    {"version": "2.11.0", "critical": true, "message": "Major update. Full MDT rewrite with an in-game license creator, penal codes, warrants, tickets and a wanted system, rebuilt evidence system with CSI kit and DNA, new house robbery, graveyard digging and casino slots, new vehicle keys and manage menu, plus multiple fixes and optimizations."},
+    {"version": "2.11.1", "critical": false, "message": "Minor update. Added Slovenian language support, dynamic furnishing doors, and multiple fixes and improvements."},
+    {"version": "2.12.0", "critical": true, "message": "Major update, a fresh install is required. Rebuilt phone, rewritten properties with apartments merged in, new casino, new banking with shared accounts, mayor managed taxes, new tow system, vehicle controls, meter robbery, pawnshop orders, hustling job, in-game image studio, in-game creators and presets across all scripts, reworked HUD, buffs, perks, dispatch in the MDT, fishing and more."}
+  ]
+}
