@@ -36,9 +36,9 @@ If the txAdmin recipe fails, download **meteo-v2-package-recipe.zip** from the
 - **Renaming the scripts (optional):** run `tools/meteo-rename.bat` in your
   server folder after the scripts are in place and point it at that folder.
 - **Prompt Studio maps:** the package locations are made for these maps. Get the
-  Meteo V2 maps package (https://store.prompt-mods.com/store/package/7718215), download the maps from the CFX
-  portal into `resources/[assets]/[prompt-maps]/`, then run
-  `tools/meteo-promptmaps.bat` to apply the Meteo fixes.
+  Meteo V2 maps package (https://store.prompt-mods.com/store/package/7718215), download Part 1, Part 2 and Part 3
+  from the CFX portal and drop them into `resources/[assets]/[prompt-maps]/`.
+  Guide: https://docs.meteostudios.net/packages/meteo-v2-package/installation-guide#prompt-studio-maps
 
 ## Help
 
